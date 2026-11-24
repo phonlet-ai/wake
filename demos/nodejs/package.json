@@ -1,0 +1,6 @@
+{
+ "name":"@phonlet-ai/wake-demo-node", "version":"0.1.0", "private":true, "type":"module",
+ "description":"Wake WAV and ALSA microphone examples",
+ "dependencies":{"@phonlet-ai/wake-node":"0.1.0","@phonlet-ai/wake-model-en":"0.1.0"},
+ "scripts":{"file":"node file.mjs","mic":"node microphone.mjs"}
+}

@@ -1,0 +1,17 @@
+{
+  "schema": "phonlet-wake-threshold-bundle-v1",
+  "model_sha256": "77164377a658a749d3f41057216c0b23d8ad822e434d8ac79c5fb40aa9ac9f7e",
+  "language": "en",
+  "phone_count": 39,
+  "blank_id": 0,
+  "files": {
+    "evidence/heldout/meta.json": "2df020a7f830a825d7906125d775909204eec807f77c29058192069aa8c150c9",
+    "evidence/heldout/store.npz": "58da91ac1c1a83a8247efa1b5bd9e7c477346fc7b7b8742bf5a478e3868b4d95",
+    "evidence/heldout/text.npz": "9ad804cec1dd5b85e1043fd8598d28de34ae80af946c71abbf1028e5b2fe7824",
+    "evidence/hunt/meta.json": "b9660a289adacbfc11518d190a7c1b948e92991ced5cae6a3d6ed0c08e0407e7",
+    "evidence/hunt/store.npz": "3747cb91d1c4044b0ff368393b8ce60d29ba731db268dce99f2d3aec74f28d66",
+    "generator.json": "55f6d629b133242fa6a7cbe4d9a233d0e34e4892b5ce1ad8e36a7d911789b9f8",
+    "lexicon.txt": "229dfaa8a3de1a560e4fcfb246793594287be12e6c614374f8704479c6c25220",
+    "policy.json": "218b240dbc99a62f2e0fb4d689bcfa6973ebe55616695bb610d296d9da2c4b85"
+  }
+}

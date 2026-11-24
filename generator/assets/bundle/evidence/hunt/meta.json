@@ -1,0 +1,77 @@
+{
+ "identity": "84e17819bcad55d61661cf381df24496eece0c0359a9949c173cb5a61958a597",
+ "value": {
+  "list": "2c9b59d235298dad1527bfa95025db2b974881d27ecef827eade87eb9df70f28",
+  "model": "77164377a658a749d3f41057216c0b23d8ad822e434d8ac79c5fb40aa9ac9f7e",
+  "row": {
+   "name": "noise",
+   "noise": {
+    "categories": [
+     "noise",
+     "music"
+    ],
+    "snr_db": [
+     0,
+     20
+    ]
+   }
+  },
+  "material": {
+   "noise": "e6bd212d8ae44b9f181add23ba9d6d49d6cdc8e26feaaeaa132a10fd12d612ad"
+  },
+  "seed": 1234,
+  "quantiles": 8,
+  "limit": 0,
+  "versions": [
+   "align.cc-v1",
+   "augment-v1",
+   "measure.cc-v1",
+   "sources-v1",
+   "tstore-q-v1"
+  ],
+  "audio_cache": {
+   "cv_train": {
+    "root": "/workspace/corpora",
+    "dir": "/cache/audio16k",
+    "scale": 16384
+   },
+   "giga_train": {
+    "root": "/workspace/corpora",
+    "dir": "/cache/audio16k",
+    "scale": 16384
+   }
+  }
+ },
+ "pass": {
+  "name": "noise",
+  "noise": {
+   "categories": [
+    "noise",
+    "music"
+   ],
+   "snr_db": [
+    0,
+    20
+   ]
+  }
+ },
+ "utterances": 137308,
+ "failed": 0,
+ "unreadable": 0,
+ "unreadable_examples": [],
+ "records": 10801887,
+ "hours": 318.69085333333334,
+ "seconds": 322.44358086586,
+ "coverage": {
+  "tri_keys": 34354,
+  "tri_ge_20": 25755,
+  "ctx_keys": 1852,
+  "phones": 39
+ },
+ "snr_db_drawn": {
+  "n": 137308,
+  "mean": 9.993737873976752
+ },
+ "store_bytes": 6830041,
+ "phrases_measured": 0
+}

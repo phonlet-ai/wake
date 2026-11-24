@@ -1,0 +1,102 @@
+{
+  "model": {
+    "id": "en-1",
+    "sha256": "8be3687d060f953d0069480cf53d1fd0aa66e04551c2a4b600823a992a864af8"
+  },
+  "keywords": [
+    {
+      "name": "hey phonlet",
+      "pronunciations": [
+        [16, 11, 18, 14, 1, 23, 21, 3, 31],
+        [16, 11, 14, 1, 23, 21, 3, 31]
+      ],
+      "threshold_loose": -1.28125,
+      "threshold_strict": -0.96484375,
+      "endpoint": false,
+      "metadata": {
+        "expected_error": {
+          "threshold_loose": 100.6,
+          "threshold_strict": 137.2,
+          "default": 118.2
+        },
+        "fa_factor_at_default": 5.76,
+        "flag": true
+      }
+    },
+    {
+      "name": "ok phonlet",
+      "pronunciations": [
+        [25, 20, 13, 14, 1, 23, 21, 3, 31]
+      ],
+      "threshold_loose": -1.4072265625,
+      "threshold_strict": -1.060546875,
+      "endpoint": false,
+      "metadata": {
+        "expected_error": {
+          "threshold_loose": 37.5,
+          "threshold_strict": 44.2,
+          "default": 38.2
+        },
+        "fa_factor_at_default": 1.64,
+        "flag": false
+      }
+    },
+    {
+      "name": "hey assistant",
+      "pronunciations": [
+        [16, 11, 18, 3, 29, 17, 29, 31, 3, 23, 31]
+      ],
+      "threshold_loose": -1.248046875,
+      "threshold_strict": -0.939453125,
+      "endpoint": false,
+      "metadata": {
+        "expected_error": {
+          "threshold_loose": 84.6,
+          "threshold_strict": 123.1,
+          "default": 98.4
+        },
+        "fa_factor_at_default": 4.35,
+        "flag": true
+      }
+    },
+    {
+      "name": "assistant",
+      "pronunciations": [
+        [3, 29, 17, 29, 31, 3, 23, 31]
+      ],
+      "threshold_loose": -0.869140625,
+      "threshold_strict": -0.451171875,
+      "endpoint": false,
+      "metadata": {
+        "expected_error": {
+          "threshold_loose": 48.2,
+          "threshold_strict": 69.6,
+          "default": 52.7
+        },
+        "fa_factor_at_default": 1.74,
+        "flag": false
+      }
+    },
+    {
+      "name": "hey wake",
+      "pronunciations": [
+        [16, 11, 18, 36, 13, 20]
+      ],
+      "threshold_loose": -1.4638671875,
+      "threshold_strict": -1.0087890625,
+      "endpoint": false,
+      "metadata": {
+        "expected_error": {
+          "threshold_loose": 121.8,
+          "threshold_strict": 178.1,
+          "default": 148.3
+        },
+        "fa_factor_at_default": 4.37,
+        "flag": true
+      }
+    }
+  ],
+  "metadata": {
+    "description": "The English phrases shipped with Phonlet Wake; pronunciations chosen by hand."
+  }
+}

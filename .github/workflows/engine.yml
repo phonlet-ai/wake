@@ -1,0 +1,48 @@
+name: Engine cross-platform build
+# Manual dispatch only during the publishing program (see PLAN.md): local
+# verification is the gate; matrix runs are launched on demand.
+on:
+  workflow_dispatch:
+    inputs:
+      run_tests:
+        description: 'Also run the Python-driven engine tests (Linux only)'
+        default: true
+        type: boolean
+permissions:
+  contents: read
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { os: ubuntu-24.04, cc: gcc, cxx: g++ }
+          - { os: macos-14, cc: clang, cxx: clang++ }      # arm64
+          - { os: macos-13, cc: clang, cxx: clang++ }      # x86_64
+          - { os: windows-2022, cc: cl, cxx: cl }
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - name: Configure
+        run: cmake -S engine -B build -DCMAKE_BUILD_TYPE=Release
+      - name: Build
+        run: cmake --build build --config Release -j2
+      - name: Check public ABI exports (unix)
+        if: runner.os != 'Windows'
+        run: |
+          set -e
+          lib=$(find build -name 'libkws_engine*' | head -1)
+          case "$(uname -s)" in
+            Darwin) exports=$(nm -gU "$lib" | awk '{print $NF}' | sed 's/^_//') ;;
+            *) exports=$(nm -D "$lib" | awk '{print $NF}') ;;
+          esac
+          for symbol in phonlet_wake_init phonlet_wake_process phonlet_wake_delete; do
+            grep -qx "$symbol" <<< "$exports" || { echo "missing export $symbol"; exit 1; }
+          done
+      - name: Engine tests (Linux)
+        if: inputs.run_tests && runner.os == 'Linux'
+        run: |
+          python -m pip install numpy pytest
+          python -m pytest -q

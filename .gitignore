@@ -1,0 +1,36 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+*.egg-info/
+/build/
+/engine/build/
+/research/data/
+/research/runs/
+/results/
+.env
+.env.*
+!.env.example
+
+/engine/wasm/build/
+node_modules/
+/dist/
+/sdk/python/build/
+/sdk/python/dist/
+*.so
+*.node
+
+/demos/*/dist/
+/packaging/model-python/build/
+# ESP-IDF demos: copied assets and build outputs
+/demos/esp32/main/model.pwake
+/demos/esp32/main/keywords.json
+/demos/esp32*/build/
+/demos/esp32*/sdkconfig
+/demos/esp32*/sdkconfig.old
+/demos/esp32*/managed_components/
+/sdk/esp32/wake/build/
+/demos/esp32*/build.log
+
+# Generator (Rust) build output
+/generator/target/

@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:phonlet:wake:keyword-file:1",
+  "title": "Phonlet Wake keyword file",
+  "description": "Phrases with their pronunciations and calibrated thresholds, as the threshold generator writes them. A bare array of phrases is accepted wherever a keyword file is.",
+  "oneOf": [
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["keywords"],
+      "properties": {
+        "model": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["id", "sha256"],
+          "properties": {
+            "id": {"type": "string", "minLength": 1, "description": "Model id, e.g. en-1"},
+            "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$", "description": "SHA-256 of the model file"}
+          }
+        },
+        "keywords": {"$ref": "#/$defs/phrases"},
+        "metadata": {"type": "object", "description": "Free-form; never read by the engine"}
+      }
+    },
+    {"$ref": "#/$defs/phrases"}
+  ],
+  "$defs": {
+    "phrases": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "pronunciations", "threshold_loose", "threshold_strict", "endpoint"],
+        "properties": {
+          "name": {"type": "string", "minLength": 1},
+          "id": {"type": "string", "minLength": 1, "description": "Defaults to name; unique within the file"},
+          "pronunciations": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 256,
+              "items": {"type": "integer", "minimum": 1, "maximum": 39}
+            }
+          },
+          "threshold_loose": {"type": "number", "description": "Threshold at sensitivity 1; not above threshold_strict"},
+          "threshold_strict": {"type": "number", "description": "Threshold at sensitivity 0"},
+          "endpoint": {"type": "boolean"},
+          "sensitivity": {"type": "number", "minimum": 0, "maximum": 1, "description": "Node.js, browser and Python SDKs only"},
+          "metadata": {"type": "object", "description": "Free-form; never read by the engine"}
+        }
+      }
+    }
+  }
+}

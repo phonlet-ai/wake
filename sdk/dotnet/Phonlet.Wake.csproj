@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <Version>0.1.0</Version>
+    <Description>Phonlet Wake on-device wake-word detection (.NET binding over the public C ABI)</Description>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <!-- PolyForm-Noncommercial-1.0.0 is not an OSI/FSF licence, so the package carries the file. -->
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="LICENSE" Pack="true" PackagePath="" />
+  </ItemGroup>
+</Project>

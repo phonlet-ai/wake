@@ -1,0 +1,16 @@
+# Text files normalize to LF everywhere: artifact hashes are part of the
+# product contract, so a Windows checkout must byte-match a Linux one.
+* text=auto eol=lf
+
+# Binary artifacts
+*.pwake binary
+*.npz binary
+*.wasm binary
+*.node binary
+*.png binary
+*.whl binary
+*.gz binary
+
+# The generator verifies its assets by SHA-256: never convert their line endings.
+generator/assets/** -text -whitespace
+*.en -whitespace

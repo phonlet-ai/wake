@@ -1,0 +1,37 @@
+{
+ "description": "Synthetic binding conformance, NOT accuracy evidence: real model and silent PCM with deliberately permissive endpoint-off test thresholds. No production assets are modified.",
+ "samples": 35857,
+ "keywords": [
+  {
+   "name": "test-first",
+   "pronunciations": [
+    [
+     1
+    ]
+   ],
+   "threshold_loose": -32,
+   "threshold_strict": 0,
+   "endpoint": false,
+   "sensitivity": 0
+  },
+  {
+   "name": "test-second",
+   "pronunciations": [
+    [
+     1
+    ]
+   ],
+   "threshold_loose": -32,
+   "threshold_strict": 0,
+   "endpoint": false,
+   "sensitivity": 1
+  }
+ ],
+ "expected_frames": [
+  16,
+  33,
+  50,
+  67
+ ],
+ "expected_keyword_index": 1
+}

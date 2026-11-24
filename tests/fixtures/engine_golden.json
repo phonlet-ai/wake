@@ -1,0 +1,11 @@
+{
+  "pcm_formula": "((i * 7919 % 65536) - 32768), int16, 8192 samples",
+  "frontend_id": "3f047efa",
+  "mel_sha256": "26027391afd651bf2b575b0a2887a7afaf6311e1bb817e49fecead507ab55cf0",
+  "scores_sha256": "249da5ad3313c9184fe28661d55a61cdf8b962cec8829d71343bb94f20824a51",
+  "fires_sha256": "0c79fc80bbb534a19c18350c2d9e94da60807215beaf6bef6b9c32c41c52cf1c",
+  "fires": 15,
+  "source_library_sha256": "c953cf5e59a4875a8b72b31190be50e396213ae3503ffb0f42fff7ea11694e98",
+  "source_build": "engine-multi/build/3d21614b18eac37d56c6",
+  "note": "Expected hashes from the preserved original deployed engine. No posterior or feature arrays are stored."
+}

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Try Phonlet Wake locally. Choose wake words, adjust each word's sensitivity, and use a microphone or audio file.">
+  <meta name="theme-color" content="#0B1020">
+  <title>Phonlet Wake · Browser demo</title>
+  <link rel="icon" href="./brand/phonlet-ai-favicon-gradient.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./brand/brand-tokens.css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#workspace">Skip to demo</a>
+  <header class="hero">
+    <div class="wrap">
+      <div class="masthead">
+        <img class="logo" src="./brand/phonlet-ai-horizontal-dark.svg" alt="Phonlet AI" width="220" height="60">
+        <span class="release-label">Private preview · 0.1.0</span>
+      </div>
+      <p class="eyebrow">Phonlet Wake</p>
+      <h1>Wake words.<br>On your device.</h1>
+      <p class="intro">Choose the words that matter. Set a sensitivity for each.<br class="wide-only"> Listen with your microphone or try an audio file.</p>
+      <div class="hero-notes"><span>Local audio processing</span><span>No account required</span><span>English model</span></div>
+    </div>
+  </header>
+
+  <main id="workspace" class="wrap workspace">
+    <section class="keywords-panel" aria-labelledby="keywords-heading">
+      <div class="section-heading">
+        <div><p class="step">01 / Configure</p><h2 id="keywords-heading">Choose your wake words</h2></div>
+        <span id="selected-count" class="count">0 selected</span>
+      </div>
+      <p class="hint" id="sensitivity-help">Higher sensitivity makes a word easier to trigger and can increase false activations.</p>
+      <div class="defaults">
+        <label for="sensitivity">Default sensitivity</label>
+        <input id="sensitivity" type="number" required min="0" max="1" step="0.05" value="0.5" aria-describedby="sensitivity-help">
+        <button id="reset" class="text-button" type="button">Reset overrides</button>
+      </div>
+      <p class="small">Each slider overrides the default for that word.</p>
+      <div id="keywords" role="group" aria-label="Keyword selection"></div>
+    </section>
+
+    <div class="session-column">
+      <section class="session-panel" aria-labelledby="listen-heading">
+        <p class="step">02 / Try it</p><h2 id="listen-heading">Listen locally</h2>
+        <p class="hint">Audio is processed in this browser. Nothing is uploaded by this demo.</p>
+        <div class="controls">
+          <button id="start" class="primary" type="button" disabled>Start microphone</button>
+          <button id="stop" class="secondary" type="button" disabled>Stop</button>
+        </div>
+        <div class="file-option">
+          <label for="file">Or open an audio file</label>
+          <input id="file" type="file" accept=".wav,audio/wav" aria-describedby="file-help" disabled>
+          <p class="small" id="file-help">WAV · mono · 16 kHz · signed PCM16</p>
+        </div>
+        <p id="status" class="status" role="status">Loading local model…</p>
+        <p id="error" class="error" role="alert"></p>
+        <details class="runtime-options">
+          <summary>Browser requirements &amp; options</summary>
+          <p class="small">Microphone access needs localhost or HTTPS and a browser that provides a 16 kHz AudioContext.</p>
+          <label class="simd-option"><input id="simd" type="checkbox"> Use WASM SIMD</label>
+          <p class="small">Optional vector instructions. Leave unchecked to use the scalar runtime.</p>
+        </details>
+      </section>
+
+      <section class="detections-panel" aria-labelledby="detections-heading">
+        <div class="section-heading">
+          <div><p class="step">03 / Results</p><h2 id="detections-heading">Detections</h2></div>
+          <span id="detection-count" class="count">0</span>
+        </div>
+        <ol id="events" aria-live="polite" aria-relevant="additions">
+          <li id="empty" class="empty-state"><strong>Ready when you are.</strong><span>Detections will appear here with the keyword and audio timestamp.</span></li>
+        </ol>
+      </section>
+    </div>
+  </main>
+
+  <footer class="wrap footer">
+    <p><strong>Phonlet Wake</strong><span>Speech intelligence for edge devices.</span></p>
+    <p class="qualification">Private candidate · 20 enrolled English keywords. Recognition quality, false-alarm rates and physical microphones are not yet qualified. Sensitivity is a detection setting, not a confidence score.</p>
+  </footer>
+  <script type="module" src="./app.mjs"></script>
+</body>
+</html>

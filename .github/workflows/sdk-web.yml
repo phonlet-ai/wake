@@ -1,0 +1,26 @@
+name: Web SDK build
+# Manual dispatch only during the publishing program (see PLAN.md).
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  wasm:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: '24' }
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: python -m pip install numpy pytest
+      - name: Install pinned Emscripten
+        run: |
+          git clone --depth 1 https://github.com/emscripten-core/emsdk.git "$RUNNER_TEMP/emsdk"
+          "$RUNNER_TEMP/emsdk/emsdk" install 6.0.9
+          "$RUNNER_TEMP/emsdk/emsdk" activate 6.0.9
+          echo "EMSDK=$RUNNER_TEMP/emsdk" >> "$GITHUB_ENV"
+      - run: bash engine/wasm/build.sh
+      - run: bash engine/wasm/build.sh --simd
+      - run: node sdk/web/test/smoke.mjs
+      - run: node sdk/web/test/smoke.mjs --simd

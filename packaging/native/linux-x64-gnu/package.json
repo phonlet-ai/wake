@@ -1,0 +1,6 @@
+{
+  "name":"@phonlet-ai/wake-node-linux-x64-gnu", "version":"0.1.0", "private":true, "license":"PolyForm-Noncommercial-1.0.0",
+  "description":"Phonlet Wake Linux x64 glibc native Node-API v8 engine",
+  "main":"wake_node.node", "os":["linux"], "cpu":["x64"], "libc":["glibc"],
+  "files":["wake_node.node","build.json","LICENSE","README.md"], "engines":{"node":">=22"}
+}

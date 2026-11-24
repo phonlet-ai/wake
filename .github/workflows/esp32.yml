@@ -1,0 +1,27 @@
+name: ESP32-S3 cross-compile
+# Manual dispatch only during the publishing program (see PLAN.md). Container
+# build only — on-device evidence is recorded separately with real hardware.
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    container:
+      image: espressif/idf:v5.4
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prepare embedded assets
+        run: |
+          cp resources/models/en-1/model.pwake demos/esp32/main/
+          cp resources/keywords/en.json demos/esp32/main/keywords.json
+      - name: Build for ESP32-S3
+        shell: bash
+        env:
+          IDF_TARGET: esp32s3
+        run: |
+          . $IDF_PATH/export.sh
+          cd demos/esp32
+          idf.py set-target esp32s3
+          idf.py build

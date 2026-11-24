@@ -1,0 +1,7 @@
+{
+  "name":"@phonlet-ai/wake-model-en", "version":"0.1.0", "private":true, "license":"PolyForm-Noncommercial-1.0.0",
+  "description":"Phonlet Wake en-1 English model and 19 enrolled keywords",
+  "main":"index.cjs", "types":"index.d.ts",
+  "exports":{".":{"types":"./index.d.ts","import":"./index.mjs","require":"./index.cjs"},"./web":"./web.mjs","./assets/*":"./*"},
+  "files":["index.cjs","index.mjs","index.d.ts","web.mjs","model.pwake","keywords.json","README.md","LICENSE","THIRD_PARTY_NOTICES.md"]
+}

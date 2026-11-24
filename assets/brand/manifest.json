@@ -1,0 +1,23 @@
+{
+  "name": "Phonlet AI brand assets",
+  "files": {
+    "phonlet-ai-wake-cover.svg": {
+      "sha256": "4193a49419281129371d511626c2acff2dfca8b73dfa293d741c928194c2b2a0"
+    },
+    "phonlet-ai-horizontal-light.svg": {
+      "sha256": "f9caecd93853048e81f0e7b27083496b82fd7fa7277bf3727a465bf76a83a73f"
+    },
+    "phonlet-ai-horizontal-dark.svg": {
+      "sha256": "c6d4b71455be1139ebadffade5dad97a60339d6593c2bae2d99aba1e6c83892b"
+    },
+    "phonlet-ai-favicon-gradient.svg": {
+      "sha256": "0c2a8bfbd0fa033f4f587483629b3f1f07b8593479f2fcbab1fa6c8553ada682"
+    },
+    "phonlet-ai-wave-background.svg": {
+      "sha256": "06bf7be1412a8f836b9af05a55b4e8f4abbaf405971409f02a997eca996504af"
+    },
+    "brand-tokens.css": {
+      "sha256": "a757a89acfa84f09e44abb79077aff478857c8c123459f24bac6850af075e1ca"
+    }
+  }
+}

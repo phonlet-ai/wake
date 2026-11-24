@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.16)
+project(WakeExamples LANGUAGES C CXX)
+find_package(Wake CONFIG REQUIRED)
+add_executable(wake-c detect.c)
+target_link_libraries(wake-c PRIVATE Wake::engine)
+add_executable(wake-cpp detect.cc)
+target_link_libraries(wake-cpp PRIVATE Wake::engine)
+target_compile_features(wake-cpp PRIVATE cxx_std_17)

@@ -1,0 +1,72 @@
+name: Generator binaries
+
+# Manual only. Builds and parity-tests wake-threshold for Linux x64, Windows x64 and macOS arm64.
+# With a tag (an existing release, for example v0.1.0) the binaries are uploaded to that release;
+# without one they are kept as workflow artifacts.
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Existing release tag to upload the binaries to (e.g. v0.1.0); empty = build only"
+        required: false
+        default: ""
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+            target: x86_64-unknown-linux-musl
+            binary: wake-threshold
+          - os: windows-latest
+            target: x86_64-pc-windows-msvc
+            binary: wake-threshold.exe
+          - os: macos-14
+            target: aarch64-apple-darwin
+            binary: wake-threshold
+    runs-on: ${{ matrix.os }}
+    defaults:
+      run:
+        working-directory: generator
+        shell: bash
+    steps:
+      - uses: actions/checkout@v4
+      - run: rustup target add ${{ matrix.target }}
+      - name: Parity tests
+        run: cargo test --release --locked
+      - name: Build
+        run: cargo build --release --locked --target ${{ matrix.target }}
+      - name: Smoke test
+        run: target/${{ matrix.target }}/release/${{ matrix.binary }} "hey computer" --compact
+      - name: Name the binary for its platform
+        run: |
+          version=$(sed -n 's/^version = "\(.*\)"/\1/p' Cargo.toml | head -1)
+          mkdir -p dist
+          ext=""; [[ "${{ matrix.binary }}" == *.exe ]] && ext=".exe"
+          cp "target/${{ matrix.target }}/release/${{ matrix.binary }}" "dist/wake-threshold-$version-${{ matrix.target }}$ext"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: wake-threshold-${{ matrix.target }}
+          path: generator/dist/*
+
+  upload:
+    if: inputs.tag != ''
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: dist
+          merge-multiple: true
+      - name: Upload to the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ inputs.tag }}
+        run: |
+          cd dist
+          sha256sum wake-threshold-* > SHA256SUMS-wake-threshold
+          gh release upload "$TAG" --repo "$GITHUB_REPOSITORY" --clobber wake-threshold-* SHA256SUMS-wake-threshold

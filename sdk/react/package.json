@@ -1,0 +1,18 @@
+{
+  "name": "@phonlet-ai/wake-react",
+  "version": "0.1.0",
+  "description": "React hook for Phonlet Wake on-device wake-word detection",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "type": "module",
+  "main": "index.mjs",
+  "types": "index.d.ts",
+  "files": ["index.mjs", "index.d.ts", "README.md", "LICENSE"],
+  "exports": {
+    ".": {"import": "./index.mjs", "types": "./index.d.ts"},
+    "./package.json": "./package.json"
+  },
+  "peerDependencies": {"react": ">=18"},
+  "dependencies": {"@phonlet-ai/wake-web": "0.1.0"},
+  "engines": {"node": ">=20"},
+  "private": true
+}

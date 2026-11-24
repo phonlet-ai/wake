@@ -1,0 +1,44 @@
+plugins { id "com.android.library" }
+android {
+    namespace = "ai.phonlet.wake"
+    compileSdk = 35
+    defaultConfig {
+        minSdk = 26
+        ndk { abiFilters += ["arm64-v8a", "armeabi-v7a", "x86_64"] }
+    }
+    externalNativeBuild { cmake { path = file("CMakeLists.txt"); version = "3.22.1" } }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    // The Java surface is the shared sdk/java source, proven on the JVM;
+    // libwakejni below binds it to the engine compiled for each ABI.
+    sourceSets { main { java.srcDir "../../java/src" } }
+}
+dependencies { testImplementation "junit:junit:4.13.2" }
+
+// Publishes the AAR to mavenLocal for apps built against it during development.
+apply plugin: "maven-publish"
+group = "ai.phonlet.wake"
+version = "0.1.0"
+publishing {
+    publications {
+        wake(MavenPublication) {
+            groupId = "ai.phonlet.wake"
+            artifactId = "wake"
+            version = "0.1.0"
+            pom {
+                licenses {
+                    license {
+                        name = "PolyForm-Noncommercial-1.0.0"
+                        url = "https://polyformproject.org/licenses/noncommercial/1.0.0"
+                    }
+                }
+            }
+        }
+    }
+}
+afterEvaluate {
+    publishing.publications.wake.artifact(
+            "$buildDir/outputs/aar/wake-release.aar") { builtBy assembleRelease }
+}

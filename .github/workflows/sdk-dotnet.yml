@@ -1,0 +1,40 @@
+name: .NET SDK build
+# Manual dispatch only during the publishing program (see PLAN.md). Requires a
+# runner with the .NET SDK (windows-2022 and ubuntu-22.04+ images include it).
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  demo:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { os: ubuntu-24.04, lib: build/libkws_engine.so }
+          - { os: windows-2022, lib: build/Release/kws_engine.dll }
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with: { dotnet-version: '8.0.x' }
+      - name: Build engine
+        run: |
+          cmake -S engine -B build -DCMAKE_BUILD_TYPE=Release
+          cmake --build build --config Release -j2
+      - name: Generate deterministic test audio
+        shell: python
+        run: |
+          import struct
+          open('test-input.s16le','wb').write(struct.pack('<%dh'%32000,*[((i*7919)%65536)-32768 for i in range(32000)]))
+      - name: Build demo
+        run: dotnet build demos/dotnet -c Release
+      - name: Run demo (Linux)
+        if: runner.os == 'Linux'
+        run: |
+          LD_LIBRARY_PATH=build dotnet demos/dotnet/bin/Release/net8.0/FileDemo.dll resources/models/en-1/model.pwake resources/keywords/en.json test-input.s16le 0.5 0.5 0.5 0.5 0.5
+      - name: Run demo (Windows)
+        if: runner.os == 'Windows'
+        run: |
+          $env:PATH = "$PWD\build\Release;$env:PATH"
+          dotnet demos\dotnet\bin\Release\net8.0\FileDemo.dll resources\models\en-1\model.pwake resources\keywords\en.json test-input.s16le 0.5 0.5 0.5 0.5 0.5

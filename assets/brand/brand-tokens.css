@@ -1,0 +1,26 @@
+/* Phonlet AI brand tokens, v2.0. Brand masters retain their exact SVG gradient. */
+:root {
+  --phonlet-cyan: #06B6D4;
+  --phonlet-blue: #3B82F6;
+  --phonlet-purple: #8B5CF6;
+  --phonlet-night: #0B1020;
+  --phonlet-ink: #081124;
+  --phonlet-light: #E5E7EB;
+  --phonlet-white: #FFFFFF;
+  --phonlet-muted: #64748B;
+  --phonlet-link: #1D4ED8;
+  --phonlet-gradient: linear-gradient(145deg, #06B6D4 0%, #3B82F6 50%, #8B5CF6 100%);
+  --phonlet-font: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --phonlet-code-font: ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --phonlet-space-1: 4px;
+  --phonlet-space-2: 8px;
+  --phonlet-space-3: 12px;
+  --phonlet-space-4: 16px;
+  --phonlet-space-6: 24px;
+  --phonlet-space-8: 32px;
+  --phonlet-space-12: 48px;
+  --phonlet-space-16: 64px;
+  --phonlet-radius-control: 8px;
+  --phonlet-radius-card: 16px;
+  --phonlet-radius-feature: 24px;
+}

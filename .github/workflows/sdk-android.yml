@@ -1,0 +1,32 @@
+name: Android SDK build
+# Manual dispatch only during the publishing program (see PLAN.md). Runners
+# carry the Android SDK; NDK/CMake are installed on demand.
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  aar:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with: { distribution: temurin, java-version: '21' }
+      - name: Accept SDK licenses and install NDK/CMake
+        run: |
+          SDKMANAGER="$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager"
+          yes | "$SDKMANAGER" --licenses > /dev/null
+          "$SDKMANAGER" --install "ndk;27.2.12479018" "cmake;3.22.1" > /dev/null
+      - uses: gradle/actions/setup-gradle@v4
+        with: { gradle-version: '8.10.2' }
+      - name: Library unit tests and AAR
+        run: gradle -p sdk/android :wake:testReleaseUnitTest :wake:assembleRelease --no-daemon
+      - name: Demo APK with embedded assets
+        run: gradle -p demos/android :app:assembleDebug --no-daemon
+      - uses: actions/upload-artifact@v4
+        with:
+          name: wake-android
+          path: |
+            sdk/android/wake/build/outputs/aar/*.aar
+            demos/android/app/build/outputs/apk/debug/*.apk
+          retention-days: 7

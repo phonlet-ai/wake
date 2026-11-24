@@ -1,0 +1,87 @@
+{
+ "identity": "c455ec6d458c059c81aa6ae03447b9377bcd5ef10f66772c05f4f6353e1aa71f",
+ "value": {
+  "list": "ab191bea8819cb34768cce3cc1f571a7c30f09088253d9a8a2705dccff7badde",
+  "model": "77164377a658a749d3f41057216c0b23d8ad822e434d8ac79c5fb40aa9ac9f7e",
+  "row": {
+   "name": "noise_w",
+   "calibrate": {
+    "said": 200,
+    "invented": 200,
+    "wake": 400
+   },
+   "noise": {
+    "categories": [
+     "noise",
+     "music"
+    ],
+    "snr_db": [
+     0,
+     20
+    ]
+   }
+  },
+  "material": {
+   "noise": "e6bd212d8ae44b9f181add23ba9d6d49d6cdc8e26feaaeaa132a10fd12d612ad"
+  },
+  "seed": 1234,
+  "quantiles": 8,
+  "limit": 0,
+  "versions": [
+   "align.cc-v1",
+   "augment-v1",
+   "measure.cc-v1",
+   "sources-v1",
+   "tstore-q-v1"
+  ],
+  "audio_cache": {
+   "cv_train": {
+    "root": "/workspace/corpora",
+    "dir": "/cache/audio16k",
+    "scale": 16384
+   },
+   "giga_train": {
+    "root": "/workspace/corpora",
+    "dir": "/cache/audio16k",
+    "scale": 16384
+   }
+  }
+ },
+ "pass": {
+  "name": "noise_w",
+  "calibrate": {
+   "said": 200,
+   "invented": 200,
+   "wake": 400
+  },
+  "noise": {
+   "categories": [
+    "noise",
+    "music"
+   ],
+   "snr_db": [
+    0,
+    20
+   ]
+  }
+ },
+ "utterances": 72656,
+ "failed": 176,
+ "unreadable": 0,
+ "unreadable_examples": [],
+ "records": 2014403,
+ "hours": 62.39632888888889,
+ "seconds": 118.74827814102173,
+ "coverage": {
+  "tri_keys": 21986,
+  "tri_ge_20": 9279,
+  "ctx_keys": 1477,
+  "phones": 39
+ },
+ "snr_db_drawn": {
+  "n": 72832,
+  "mean": 9.993482260544816
+ },
+ "store_bytes": 4565970,
+ "phrases_measured": 800
+}

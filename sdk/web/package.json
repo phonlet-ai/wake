@@ -1,0 +1,36 @@
+{
+  "name": "@phonlet-ai/wake-web",
+  "version": "0.1.0",
+  "description": "Phonlet Wake worker-based browser SDK",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.mjs"
+    },
+    "./capture": {
+      "types": "./capture.d.ts",
+      "import": "./capture.mjs"
+    },
+    "./advanced": "./js/kws.mjs"
+  },
+  "files": [
+    "*.mjs",
+    "*.d.ts",
+    "js",
+    "dist",
+    "README.md",
+    "LICENSE",
+    "THIRD_PARTY_NOTICES.md"
+  ],
+  "scripts": {
+    "build": "bash ../../engine/wasm/build.sh && bash ../../engine/wasm/build.sh --simd",
+    "test": "node test/smoke.mjs && node test/smoke.mjs --simd"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "private": true,
+  "types": "./index.d.ts"
+}

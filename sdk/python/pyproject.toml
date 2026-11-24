@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "phonlet-wake"
+version = "0.1.0"
+description = "Phonlet Wake local native wake-word SDK"
+requires-python = ">=3.11"
+license = {text = "PolyForm-Noncommercial-1.0.0"}
+dependencies = ["numpy>=1.24"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+mic = ["sounddevice>=0.4"]
+
+[project.scripts]
+phonlet-wake = "phonlet_wake.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+phonlet_wake = ["_native/*", "py.typed", "*.pyi"]

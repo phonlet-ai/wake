@@ -1,0 +1,44 @@
+name: SDK checks
+on:
+  # Manual dispatch only: the local suite (python scripts/test.py) is the merge gate.
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  linux:
+    runs-on: ubuntu-24.04
+    strategy:
+      fail-fast: false
+      matrix:
+        node: [22, 24]
+        python: ['3.11', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install numpy pytest setuptools wheel build
+      - run: python scripts/check-repository.py
+      - run: python -m pytest -q
+      - name: Install pinned Emscripten
+        run: |
+          git clone --depth 1 https://github.com/emscripten-core/emsdk.git "$RUNNER_TEMP/emsdk"
+          "$RUNNER_TEMP/emsdk/emsdk" install 6.0.9
+          "$RUNNER_TEMP/emsdk/emsdk" activate 6.0.9
+          echo "EMSDK=$RUNNER_TEMP/emsdk" >> "$GITHUB_ENV"
+      - run: python scripts/package.py
+      - run: node sdk/web/test/smoke.mjs && node sdk/web/test/smoke.mjs --simd
+      - run: python scripts/verify-install.py --types
+      - name: Build from sdist outside checkout
+        run: |
+          mkdir -p "$RUNNER_TEMP/wake-sdist"
+          tar -xf dist/phonlet_wake-0.1.0.tar.gz -C "$RUNNER_TEMP/wake-sdist"
+          python -m build --wheel --no-isolation "$RUNNER_TEMP/wake-sdist/phonlet_wake-0.1.0"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: private-wake-node-${{ matrix.node }}-python-${{ matrix.python }}
+          path: dist/
+          retention-days: 7

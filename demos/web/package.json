@@ -1,0 +1,5 @@
+{
+ "name":"@phonlet-ai/wake-demo-web", "version":"0.1.0", "private":true, "type":"module",
+ "dependencies":{"@phonlet-ai/wake-web":"0.1.0","@phonlet-ai/wake-model-en":"0.1.0"},
+ "scripts":{"build":"node build.mjs","start":"python3 -m http.server 8080 --bind 127.0.0.1 --directory dist"}
+}

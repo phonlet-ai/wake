@@ -1,0 +1,14 @@
+menu "Phonlet Wake"
+
+    config ESP_WAKE_S3_BATCH
+        int "S3 engine: frames per pass over the weights"
+        range 1 8
+        default 4
+        help
+            The ESP32-S3 engine reads the model's weights from PSRAM once per
+            batch of 32 ms frames, so a larger batch uses less CPU. Each extra
+            frame delays every detection by 32 ms: delay = (batch - 1) x 32 ms.
+            Detections are otherwise the same. See the component README for
+            the CPU measured at each setting.
+
+endmenu

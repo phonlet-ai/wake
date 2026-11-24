@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Phonlet Wake lab</title>
+    <meta
+      name="description"
+      content="Type any wake word, calibrate it in your browser and hear it detected live by the 1 MB Phonlet Wake model. Nothing is uploaded."
+    />
+    <link rel="icon" href="icon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="app.mjs"></script>
+  </head>
+  <body>
+    <header class="top">
+      <a class="brand" href="https://phonletai.com" aria-label="Phonlet, home page">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M10 26h7v15h-7zM22 13h7v39h-7zM34 19h7v27h-7zM46 26h7v15h-7z" />
+        </svg>
+        <span class="word">phonlet<span class="dot">.</span></span>
+      </a>
+      <nav aria-label="Links">
+        <a href="https://phonletai.com/docs/">Docs</a>
+        <a href="https://huggingface.co/phonletai/wake-en-1">Model</a>
+        <a href="https://github.com/phonlet-ai/wake">GitHub</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="intro">
+        <p class="eyebrow">Phonlet Wake · en-1 · 1 MB · offline</p>
+        <h1>Any wake word. <em>Typed, not trained.</em></h1>
+        <p class="lede">
+          Type a phrase. The generator calibrates it here in your browser, then the engine listens
+          for it on your microphone. Nothing is uploaded.
+        </p>
+      </section>
+
+      <section class="lab" aria-label="Wake-word lab">
+        <div class="burst" id="burst" aria-hidden="true"></div>
+
+        <form id="add" class="add" autocomplete="off">
+          <label for="phrase">Add a phrase</label>
+          <div class="field">
+            <input
+              id="phrase"
+              name="phrase"
+              type="text"
+              maxlength="80"
+              placeholder="hey nova"
+              spellcheck="false"
+            />
+            <button type="submit" id="add-button">Add</button>
+          </div>
+          <p class="hint">
+            Two to four syllables work best. Names and made-up words get a predicted pronunciation;
+            write the sounds yourself as <code>zorblax=Z AO R B L AE K S</code>.
+          </p>
+        </form>
+
+        <ul id="phrases" class="phrases" aria-label="Phrases the engine listens for"></ul>
+
+        <div class="tune">
+          <label for="sensitivity">
+            Sensitivity <output id="sensitivity-value" for="sensitivity">0.50</output>
+          </label>
+          <input id="sensitivity" type="range" min="0" max="1" step="0.05" value="0.5" />
+          <p class="hint" id="rate">Aims at about 1 false alarm per hour of speech.</p>
+        </div>
+
+        <div class="actions">
+          <button type="button" id="listen" class="primary">Start listening</button>
+          <button type="button" id="download" class="ghost">Download keywords.json</button>
+        </div>
+
+        <div class="meter" aria-hidden="true"><span id="level"></span></div>
+        <p id="status" class="status" role="status" aria-live="polite">Loading the phrases…</p>
+
+        <section class="heard" aria-labelledby="heard-title">
+          <h2 id="heard-title">Heard <span id="heard-count">0</span></h2>
+          <ol id="heard"></ol>
+        </section>
+      </section>
+
+      <section class="facts" aria-label="Footprint">
+        <div><strong>1 MB</strong><span>one int8 model for every phrase</span></div>
+        <div><strong>1.05 MB</strong><span>of memory while listening</span></div>
+        <div><strong>0.7%</strong><span>of one laptop core, natively</span></div>
+        <div><strong>19%</strong><span>of one ESP32-S3 core</span></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Runs the Phonlet Wake browser SDK, the <code>en-1</code> model and the threshold generator
+        of release v0.1.0, as WebAssembly in workers. SDKs for Python, Node.js, C / C++, Java,
+        Android, .NET and ESP32-S3: <a href="https://phonletai.com/docs/">phonletai.com/docs</a>.
+      </p>
+      <p>
+        Free for non-commercial use under the PolyForm Noncommercial License 1.0.0; commercial
+        licences: <a href="mailto:contact@phonletai.com">contact@phonletai.com</a>. Third-party
+        notices: <a href="wake/THIRD_PARTY_NOTICES.md">engine and model</a>,
+        <a href="generator/THIRD_PARTY_NOTICES.md">generator</a>.
+      </p>
+    </footer>
+  </body>
+</html>

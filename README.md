@@ -12,7 +12,8 @@ training runs, no cloud.
 [Website](https://phonletai.com) · [Try it live](https://phonletai.com/#lab) ·
 [Generator](https://phonletai.com/generator) · [Docs](https://phonletai.com/docs) ·
 [For AI agents](https://phonletai.com/agents.md) ·
-[Downloads](https://github.com/phonlet-ai/wake/releases/latest)
+[Downloads](https://github.com/phonlet-ai/wake/releases/latest) ·
+[Hugging Face](https://huggingface.co/phonletai/wake-en-1)
 
 ## Footprint
 
@@ -79,7 +80,9 @@ code. See [phrases and keyword files](docs/keywords.md).
 ## Downloads
 
 Release [v0.1.0](https://github.com/phonlet-ai/wake/releases/tag/v0.1.0); every file is listed in
-`SHA256SUMS`.
+`SHA256SUMS`. The model is also on Hugging Face as
+[phonletai/wake-en-1](https://huggingface.co/phonletai/wake-en-1), and the lab runs as the
+[phonletai/wake](https://huggingface.co/spaces/phonletai/wake) Space.
 
 | File | What it is |
 | --- | --- |
@@ -138,7 +141,7 @@ them; a phrase fires when its score passes the threshold set by its sensitivity.
 | [`generator/`](generator/README.md) | `wake-threshold`, the threshold generator (Rust; also WebAssembly) |
 | [`demos/`](demos/README.md) | Runnable examples for each SDK |
 | [`resources/`](resources/README.md) | The `en-1` model and the English keyword file |
-| [`packaging/`](packaging/) | Model and native-library packages |
+| [`packaging/`](packaging/) | Model and native-library packages; the Hugging Face model card, lab Space and organisation card ([`scripts/publish-huggingface.sh`](scripts/publish-huggingface.sh)) |
 | [`docs/`](docs/README.md) | How it works, keyword files, the SDK contract, development |
 | [`scripts/`](scripts/), [`tests/`](tests/) | Build, packaging, repository gate and tests |
 

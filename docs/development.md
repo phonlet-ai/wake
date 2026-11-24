@@ -45,6 +45,14 @@ The packager emits separate SDK, model, native, demo and source archives in `dis
 
 `verify-install.py` uses independent consumer directories. It installs local npm archives without lifecycle scripts, installs Python wheels and checks inference with no compiler on PATH, and builds the browser demo against installed packages. It may fetch declared Python dependencies and, with `--types`, TypeScript.
 
+## Hugging Face
+
+`scripts/publish-huggingface.sh` publishes the model repo `phonletai/wake-en-1`, the lab Space
+`phonletai/wake` and the organisation card from the files of a GitHub release (checked against its
+`SHA256SUMS`) and `packaging/huggingface/`. `--stage DIR` builds both trees without uploading; serve
+`DIR/space` to test the lab locally. Uploading needs `hf auth login` with write access to the
+`phonletai` organisation.
+
 ## Focused development
 
 For Python, use `python -m pip install -e ./sdk/python`. From a checkout, `python run.py info` and `python run.py detect input.wav` run the Python SDK's command-line tool without installing it.

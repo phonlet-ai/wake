@@ -1,10 +1,13 @@
 // Phonlet Wake lab: type a phrase, calibrate it with the threshold generator (WebAssembly, in a
-// worker), and listen for it with the browser SDK. The model, the SDK and the generator are the
-// files of the Phonlet Wake release, served next to this page. Nothing leaves the tab.
+// worker), and listen for it with the browser SDK. The SDK and the generator are the files of the
+// Phonlet Wake release, served next to this page; the model, its config and the English phrases
+// come from the model repo on the Hub. No audio leaves the tab.
 import { WakeManager } from './wake/capture.mjs';
 
-const MODEL = './wake/model.pwake';
-const KEYWORDS = './wake/keywords.json';
+const HUB = 'https://huggingface.co/phonletai/wake-en-1/resolve/main';
+const MODEL = `${HUB}/phonlet-wake-en-1.pwake`;
+const CONFIG = `${HUB}/config.json`;
+const KEYWORDS = `${HUB}/phonlet-wake-en-1-keywords.json`;
 const MAX_HEARD = 12;
 
 // The engine's phone inventory: id i is PHONES[i] (0 is the blank).
@@ -326,10 +329,16 @@ ui.download.addEventListener('click', () => {
 });
 window.addEventListener('pagehide', () => void stop());
 
-try {
-  const response = await fetch(KEYWORDS);
+const fetchJson = async (url) => {
+  const response = await fetch(url);
   if (!response.ok) throw new Error(`HTTP ${response.status}`);
-  const file = await response.json();
+  return response.json();
+};
+
+try {
+  const [config, file] = await Promise.all([fetchJson(CONFIG), fetchJson(KEYWORDS)]);
+  // The keyword file names its model by SHA-256; the config names the model file the same way.
+  if (config.sha256 !== file.model?.sha256) throw new Error('the phrases belong to another model');
   state.model = file.model;
   state.phrases = file.keywords.map((entry) => ({ entry, source: entry.metadata?.source }));
   say('Type any phrase and press Enter, or start listening for the phrases below.');

@@ -33,20 +33,21 @@ curl -fsSL -o "$work/release/SHA256SUMS" "$URL/SHA256SUMS"
 for file in "${FILES[@]}"; do curl -fsSL -o "$work/release/$file" "$URL/$file"; done
 (cd "$work/release" && for file in "${FILES[@]}"; do grep " $file\$" SHA256SUMS; done | sha256sum -c --quiet)
 
-# The model repo: card, model, English phrases, licence and notices.
+# The model repo: card, config, model, English phrases, licence and notices. The Hub counts a
+# download for each request of config.json.
 model=$work/model
 mkdir -p "$model"
-cp packaging/huggingface/model/README.md LICENSE THIRD_PARTY_NOTICES.md "$model/"
+cp packaging/huggingface/model/README.md packaging/huggingface/model/config.json LICENSE \
+  THIRD_PARTY_NOTICES.md "$model/"
 cp "$work/release/phonlet-wake-en-1.pwake" "$work/release/phonlet-wake-en-1-keywords.json" "$model/"
 
-# The Space: the page, the browser SDK with the model, and the generator.
+# The Space: the page, the browser SDK and the generator. It loads the model, its config and the
+# English phrases from the model repo, so a visit counts as a download of the model.
 space=$work/space
 mkdir -p "$space/wake" "$space/generator"
 cp -r packaging/huggingface/space/. "$space/"
 tar -xzf "$work/release/phonlet-ai-wake-web-0.1.0.tgz" -C "$work"
 cp -r "$work/package/." "$space/wake/"
-cp "$work/release/phonlet-wake-en-1.pwake" "$space/wake/model.pwake"
-cp "$work/release/phonlet-wake-en-1-keywords.json" "$space/wake/keywords.json"
 cp "$work/release/wake-threshold-0.2.0.wasm" "$space/generator/wake_threshold.wasm"
 cp LICENSE "$space/generator/LICENSE"
 cp generator/THIRD_PARTY_NOTICES.md "$space/generator/THIRD_PARTY_NOTICES.md"
@@ -66,6 +67,7 @@ hf upload "$MODEL_REPO" "$model" . --repo-type model \
   --commit-message "Phonlet Wake en-1 from release $RELEASE"
 hf repos create "$SPACE_REPO" --repo-type space --space-sdk static --public --exist-ok
 hf upload "$SPACE_REPO" "$space" . --repo-type space \
+  --delete wake/model.pwake --delete wake/keywords.json \
   --commit-message "Phonlet Wake lab from release $RELEASE"
 hf repos create "$CARD_REPO" --repo-type space --space-sdk static --public --exist-ok
 # The card shows the Space's index.html when it has one, so the template's files are removed.

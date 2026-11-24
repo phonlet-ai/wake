@@ -78,11 +78,12 @@ model and a keyword file.
    ```
 
    ```python
-   from huggingface_hub import hf_hub_download
+   from huggingface_hub import snapshot_download
    from phonlet_wake import Wake
 
-   model = hf_hub_download("phonletai/wake-en-1", "phonlet-wake-en-1.pwake")
-   with Wake.create(model=model, keywords="keywords.json", sensitivity=0.5) as wake:
+   repo = snapshot_download("phonletai/wake-en-1")  # the model, its config and English phrases
+   with Wake.create(model=f"{repo}/phonlet-wake-en-1.pwake", keywords="keywords.json",
+                    sensitivity=0.5) as wake:
        for pcm in microphone_chunks():  # 16 kHz mono int16, any chunk size
            for hit in wake.process(pcm):
                print("Wake word:", hit.keyword, hit.time_seconds)
@@ -98,6 +99,7 @@ libraries), Java, Android, .NET and ESP32-S3. Code for each is in the
 | --- | --- |
 | `phonlet-wake-en-1.pwake` | The model, SHA-256 `8be3687d060f953d0069480cf53d1fd0aa66e04551c2a4b600823a992a864af8` |
 | `phonlet-wake-en-1-keywords.json` | Five English phrases as a keyword file: hey phonlet, ok phonlet, hey assistant, assistant, hey wake |
+| `config.json` | What the model expects and outputs: audio format, frontend, architecture, classes |
 | `LICENSE` | PolyForm Noncommercial License 1.0.0 |
 | `THIRD_PARTY_NOTICES.md` | The data the model was trained on and the credit each source asks for |
 

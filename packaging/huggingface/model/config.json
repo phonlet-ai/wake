@@ -1,0 +1,32 @@
+{
+  "model_type": "phonlet-wake",
+  "name": "en-1",
+  "file": "phonlet-wake-en-1.pwake",
+  "sha256": "8be3687d060f953d0069480cf53d1fd0aa66e04551c2a4b600823a992a864af8",
+  "bytes": 1013825,
+  "language": "en",
+  "audio": {
+    "sample_rate": 16000,
+    "channels": 1,
+    "format": "int16"
+  },
+  "frontend": {
+    "pre_emphasis": 0.97,
+    "window": 512,
+    "hop": 256,
+    "mel_bands": 40,
+    "stacked_hops": 2,
+    "frame_samples": 512
+  },
+  "acoustic_model": {
+    "architecture": "minGRU",
+    "layers": 6,
+    "units": 162,
+    "weights": "int8",
+    "classes": 40,
+    "outputs": "39 English ARPAbet phones and a blank"
+  },
+  "keywords": "phonlet-wake-en-1-keywords.json",
+  "engine": "Phonlet Wake 0.1.0, https://github.com/phonlet-ai/wake",
+  "license": "PolyForm-Noncommercial-1.0.0"
+}

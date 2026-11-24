@@ -27,5 +27,7 @@ leaves the tab. Download the keyword file and use it with any Phonlet Wake SDK.
 Model: [phonletai/wake-en-1](https://huggingface.co/phonletai/wake-en-1) · Source and SDKs:
 [phonlet-ai/wake](https://github.com/phonlet-ai/wake) · Website: [phonletai.com](https://phonletai.com)
 
-Built from `packaging/huggingface/space/` in the wake repository; the engine, model and generator
-are the files of Phonlet Wake release v0.1.0. Licence: PolyForm Noncommercial 1.0.0.
+Built from `packaging/huggingface/space/` in the wake repository: the engine and the generator are
+the files of Phonlet Wake release v0.1.0, and the model loads from
+[phonletai/wake-en-1](https://huggingface.co/phonletai/wake-en-1). Licence: PolyForm
+Noncommercial 1.0.0.

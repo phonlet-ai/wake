@@ -119,11 +119,17 @@ no audio, transcripts or features from this material:
 Pronunciations come from the LibriSpeech lexicon, the CMU Pronouncing Dictionary and g2p_en. Full
 credits and licence texts are in `THIRD_PARTY_NOTICES.md`.
 
-## Evaluation and limitations
+## Benchmark
 
-- No recognition benchmark is published yet. Each phrase comes with its calibrated false-alarm
-  target and an expected calibration error; how well it is heard depends on the phrase, the
-  speaker and the room, so test yours in the [Space](https://huggingface.co/spaces/phonletai/wake).
+On the public six-word wake-word benchmark (alexa, computer, jarvis, smart mirror, snowboy, view
+glass), with phrases typed as text: **92.2%** hit rate at 0.1 false alarms per hour in 10 dB noise,
+and **98.6%** without noise. The comparison with other engines, per-word results and the method:
+[benchmark](https://github.com/phonlet-ai/wake/blob/main/docs/benchmark.md).
+
+## Limitations
+
+- How well a phrase is heard depends on the phrase, the speaker and the room, so test yours in the
+  [Space](https://huggingface.co/spaces/phonletai/wake).
 - English only. Short or common words ("the", "read") fire too often; good phrases have two to
   four syllables and sounds that are rare in everyday speech.
 - Audio must be 16 kHz mono 16-bit PCM; the SDKs never resample.

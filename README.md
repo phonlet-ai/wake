@@ -28,6 +28,24 @@ training runs, no cloud.
 Audio goes in as 16 kHz mono signed 16-bit PCM, in chunks of any size; the engine works in 32 ms
 frames and reports each detection with its phrase and time.
 
+## Benchmark
+
+On [Picovoice's public wake-word benchmark](https://github.com/Picovoice/wake-word-benchmark), with
+phrases typed as text: hit rate at 0.1 false alarms per hour, 10 dB noise, mean of six words.
+
+![Benchmark: hit rate at 0.1 false alarms per hour, 10 dB noise](docs/benchmark.svg)
+
+| Engine | How a wake word is made | Hit rate, 10 dB |
+| --- | --- | ---: |
+| Picovoice Porcupine v4 | a model per word (closed) | 97.3% |
+| **Phonlet Wake 0.1.0** | typed, no training | **92.2%** |
+| Hark v0.3 | typed, no training | 78.1% |
+| Kitt.ai Snowboy | recorded templates | 68.1% |
+| sherpa-onnx KWS 3.3M | typed, no training | 66.0% |
+
+Without noise Phonlet Wake reaches 98.6%. Per-word results, sources and the method:
+[benchmark](docs/benchmark.md).
+
 ## Get started
 
 **1. Make a keyword file.** Type your phrases in the [generator](https://phonletai.com/generator)
@@ -142,8 +160,9 @@ them; a phrase fires when its score passes the threshold set by its sensitivity.
 | [`demos/`](demos/README.md) | Runnable examples for each SDK |
 | [`resources/`](resources/README.md) | The `en-1` model and the English keyword file |
 | [`packaging/`](packaging/) | Model and native-library packages; the Hugging Face model card, lab Space and organisation card ([`scripts/publish-huggingface.sh`](scripts/publish-huggingface.sh)) |
-| [`docs/`](docs/README.md) | How it works, keyword files, the SDK contract, development |
+| [`docs/`](docs/README.md) | How it works, keyword files, the benchmark, the SDK contract, development |
 | [`scripts/`](scripts/), [`tests/`](tests/) | Build, packaging, repository gate and tests |
+| [`research/benchmark/`](research/benchmark/README.md) | The benchmark harness and its results |
 
 ## Build from source
 

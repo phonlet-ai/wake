@@ -37,19 +37,35 @@ WORD_PREFIXES = {7: {'cdfbc38622aa09e0'}, 8: {'2b3d4ca3d1124ece'}, 9: {'0473fc62
 NAMES = {'e9399ea17a944495', '0e1187a00b70f5e1'}
 NAME_PREFIXES = {3: {'6729ccabf8e79971'}}
 PHRASES = {'11108fa8a883da89'}  # first word plus the first 8 letters of the next
+# The benchmark's vendor and its engine may be named where the benchmark is reported, and nowhere
+# else (maintainer's decision, 2026-11-27): these files, and the README's Benchmark section.
+BENCHMARK_WORDS = {'4236d62640f6e422', 'aacf6e0b2157e258'}
+BENCHMARK_FILES = ('docs/benchmark.md', 'docs/benchmark.svg', 'research/benchmark/')
 
 
 def digest(text):
     return hashlib.sha256(text.encode()).hexdigest()[:16]
 
 
-def banned_lines(body):
-    """Line numbers that contain a banned word."""
+def benchmark_section(body):
+    """Line numbers of the README's Benchmark section (its heading up to the next one)."""
+    lines, inside, section = body.splitlines(), False, set()
+    for number, line in enumerate(lines, 1):
+        if line.startswith('## '):
+            inside = line.strip() == '## Benchmark'
+        if inside:
+            section.add(number)
+    return section
+
+
+def banned_lines(body, allowed=lambda number: False):
+    """Line numbers that contain a banned word; `allowed(number)` admits the benchmark words."""
     found = []
     for number, line in enumerate(body.lower().splitlines(), 1):
         words = re.findall(r'[a-z0-9]+', line)
         names = re.findall(r'[a-z0-9_]+', line)
-        hit = any(digest(w) in WORDS for w in words)
+        banned = WORDS - BENCHMARK_WORDS if allowed(number) else WORDS
+        hit = any(digest(w) in banned for w in words)
         hit = hit or any(digest(w[:n]) in hashes for w in words for n, hashes in WORD_PREFIXES.items()
                          if len(w) >= n)
         hit = hit or any(digest(w) in NAMES for w in names)
@@ -129,7 +145,14 @@ def main():
             body = path.read_text('utf-8')
         except (UnicodeDecodeError, ValueError):
             continue
-        for line in banned_lines(body):
+        if relative.startswith(BENCHMARK_FILES):
+            allowed = lambda number: True
+        elif relative == 'README.md':
+            section = benchmark_section(body)
+            allowed = lambda number: number in section
+        else:
+            allowed = lambda number: False
+        for line in banned_lines(body, allowed):
             errors.append(f'Banned word in {relative}:{line}')
 
     if errors:

@@ -11,6 +11,7 @@
 | Describe a phrase, or load a keyword file | [Phrases and keyword files](keywords.md) |
 | Use an SDK | The README in its directory under [`sdk/`](../sdk/), listed in the [main README](../README.md#platforms) |
 | Run an example | [Demos](../demos/README.md) |
+| See how it scores on a public benchmark | [Benchmark](benchmark.md) |
 | Know the exact API rules every SDK follows | [SDK contract](contracts/SDK_CONTRACT.md) |
 | Build, test or package the repository | [Development guide](development.md) |
 

@@ -1,0 +1,326 @@
+{
+ "protocol": "Phonlet Wake on Picovoice's public wake-word benchmark, the way Hark reports it.",
+ "sensitivities": [
+  0.0,
+  0.02,
+  0.04,
+  0.06,
+  0.08,
+  0.1,
+  0.12,
+  0.14,
+  0.16,
+  0.18,
+  0.2,
+  0.22,
+  0.24,
+  0.26,
+  0.28,
+  0.3,
+  0.32,
+  0.34,
+  0.36,
+  0.38,
+  0.4,
+  0.42,
+  0.44,
+  0.46,
+  0.48,
+  0.5,
+  0.52,
+  0.54,
+  0.56,
+  0.58,
+  0.6,
+  0.62,
+  0.64,
+  0.66,
+  0.68,
+  0.7,
+  0.72,
+  0.74,
+  0.76,
+  0.78,
+  0.8,
+  0.82,
+  0.84,
+  0.86,
+  0.88,
+  0.9,
+  0.92,
+  0.94,
+  0.96,
+  0.98,
+  1.0
+ ],
+ "fa_per_hour": 0.1,
+ "results": [
+  {
+   "word": "view glass",
+   "snr": 10.0,
+   "hours": 24.94161342013889,
+   "keywords": 399,
+   "background_files": 2620,
+   "source": "lexicon",
+   "build_s": 318,
+   "engine_s": 532,
+   "rows": [
+    {
+     "sensitivity": 0.0,
+     "hits": 255,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.02,
+     "hits": 259,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.04,
+     "hits": 262,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.06,
+     "hits": 270,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.08,
+     "hits": 273,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.1,
+     "hits": 279,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.12,
+     "hits": 281,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.14,
+     "hits": 284,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.16,
+     "hits": 286,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.18,
+     "hits": 290,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.2,
+     "hits": 293,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.22,
+     "hits": 295,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.24,
+     "hits": 297,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.26,
+     "hits": 299,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.28,
+     "hits": 299,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.3,
+     "hits": 304,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.32,
+     "hits": 305,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.34,
+     "hits": 310,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.36,
+     "hits": 313,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.38,
+     "hits": 314,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.4,
+     "hits": 321,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.42,
+     "hits": 323,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.44,
+     "hits": 324,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.46,
+     "hits": 325,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.48,
+     "hits": 329,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.5,
+     "hits": 330,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.52,
+     "hits": 331,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.54,
+     "hits": 333,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.56,
+     "hits": 333,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.58,
+     "hits": 334,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.6,
+     "hits": 335,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.62,
+     "hits": 336,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.64,
+     "hits": 337,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.66,
+     "hits": 338,
+     "false_alarms": 3
+    },
+    {
+     "sensitivity": 0.68,
+     "hits": 340,
+     "false_alarms": 3
+    },
+    {
+     "sensitivity": 0.7,
+     "hits": 342,
+     "false_alarms": 3
+    },
+    {
+     "sensitivity": 0.72,
+     "hits": 343,
+     "false_alarms": 3
+    },
+    {
+     "sensitivity": 0.74,
+     "hits": 345,
+     "false_alarms": 4
+    },
+    {
+     "sensitivity": 0.76,
+     "hits": 348,
+     "false_alarms": 5
+    },
+    {
+     "sensitivity": 0.78,
+     "hits": 348,
+     "false_alarms": 5
+    },
+    {
+     "sensitivity": 0.8,
+     "hits": 348,
+     "false_alarms": 5
+    },
+    {
+     "sensitivity": 0.82,
+     "hits": 348,
+     "false_alarms": 5
+    },
+    {
+     "sensitivity": 0.84,
+     "hits": 348,
+     "false_alarms": 7
+    },
+    {
+     "sensitivity": 0.86,
+     "hits": 349,
+     "false_alarms": 7
+    },
+    {
+     "sensitivity": 0.88,
+     "hits": 352,
+     "false_alarms": 7
+    },
+    {
+     "sensitivity": 0.9,
+     "hits": 354,
+     "false_alarms": 7
+    },
+    {
+     "sensitivity": 0.92,
+     "hits": 356,
+     "false_alarms": 9
+    },
+    {
+     "sensitivity": 0.94,
+     "hits": 357,
+     "false_alarms": 9
+    },
+    {
+     "sensitivity": 0.96,
+     "hits": 359,
+     "false_alarms": 9
+    },
+    {
+     "sensitivity": 0.98,
+     "hits": 360,
+     "false_alarms": 10
+    },
+    {
+     "sensitivity": 1.0,
+     "hits": 360,
+     "false_alarms": 11
+    }
+   ]
+  }
+ ]
+}

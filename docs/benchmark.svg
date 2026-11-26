@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 810 440" width="810" height="440" role="img" aria-labelledby="t d">
+<title id="t">Hit rate at no more than 0.1 false alarms per hour, 10 dB noise</title>
+<desc id="d">Picovoice Porcupine v4 97.3%; Phonlet Wake 0.1.0 92.2%; Hark v0.3 78.1%; Kitt.ai Snowboy 68.1%; sherpa-onnx KWS 3.3M 66.0%; CMU PocketSphinx 5.1.1 48.0%; Vosk 0.3.45 32.7%</desc>
+<style>text{font:13px system-ui,-apple-system,Segoe UI,sans-serif;fill:#3d3f37}.k{font-size:11px;fill:#6b6d63}.h{font-size:15px;font-weight:600;fill:#1d1f19}.v{font-weight:600}.grid{stroke:#d9d6cc;stroke-width:1}.bar{fill:#a7a69c}.ours{fill:#c94322}@media (prefers-color-scheme:dark){text{fill:#d6d2c6}.k{fill:#a6a294}.h{fill:#f3efe6}.grid{stroke:#3a3b33}.bar{fill:#6f6e66}.ours{fill:#ec6a44}}</style>
+<text class="h" x="0" y="20">Picovoice wake-word benchmark: hit rate at ≤ 0.1 false alarms/hour</text>
+<text class="k" x="0" y="40">Mean of six words, 10 dB noise. Higher is better.</text>
+<line class="grid" x1="300.0" y1="58" x2="300.0" y2="406"/>
+<text class="k" x="300.0" y="422" text-anchor="middle">0%</text>
+<line class="grid" x1="410.0" y1="58" x2="410.0" y2="406"/>
+<text class="k" x="410.0" y="422" text-anchor="middle">25%</text>
+<line class="grid" x1="520.0" y1="58" x2="520.0" y2="406"/>
+<text class="k" x="520.0" y="422" text-anchor="middle">50%</text>
+<line class="grid" x1="630.0" y1="58" x2="630.0" y2="406"/>
+<text class="k" x="630.0" y="422" text-anchor="middle">75%</text>
+<line class="grid" x1="740.0" y1="58" x2="740.0" y2="406"/>
+<text class="k" x="740.0" y="422" text-anchor="middle">100%</text>
+<text x="288" y="74" text-anchor="end">Picovoice Porcupine v4</text>
+<text class="k" x="288" y="88" text-anchor="end">a model per word (closed)</text>
+<rect class="bar" x="300" y="64" width="428.1" height="22" rx="4"/>
+<text class="v" x="736.1" y="80">97.3%</text>
+<text x="288" y="122" text-anchor="end" class="v">Phonlet Wake 0.1.0</text>
+<text class="k" x="288" y="136" text-anchor="end">typed, no training</text>
+<rect class="ours" x="300" y="112" width="405.6" height="22" rx="4"/>
+<text class="v" x="713.6" y="128">92.2%</text>
+<text x="288" y="170" text-anchor="end">Hark v0.3</text>
+<text class="k" x="288" y="184" text-anchor="end">typed, no training</text>
+<rect class="bar" x="300" y="160" width="343.8" height="22" rx="4"/>
+<text class="v" x="651.8" y="176">78.1%</text>
+<text x="288" y="218" text-anchor="end">Kitt.ai Snowboy</text>
+<text class="k" x="288" y="232" text-anchor="end">recorded templates</text>
+<rect class="bar" x="300" y="208" width="299.6" height="22" rx="4"/>
+<text class="v" x="607.6" y="224">68.1%</text>
+<text x="288" y="266" text-anchor="end">sherpa-onnx KWS 3.3M</text>
+<text class="k" x="288" y="280" text-anchor="end">typed, no training</text>
+<rect class="bar" x="300" y="256" width="290.4" height="22" rx="4"/>
+<text class="v" x="598.4" y="272">66.0%</text>
+<text x="288" y="314" text-anchor="end">CMU PocketSphinx 5.1.1</text>
+<text class="k" x="288" y="328" text-anchor="end">dictionary lookup</text>
+<rect class="bar" x="300" y="304" width="211.2" height="22" rx="4"/>
+<text class="v" x="519.2" y="320">48.0%</text>
+<text x="288" y="362" text-anchor="end">Vosk 0.3.45</text>
+<text class="k" x="288" y="376" text-anchor="end">speech recognizer grammar</text>
+<rect class="bar" x="300" y="352" width="143.8" height="22" rx="4"/>
+<text class="v" x="451.8" y="368">32.7%</text>
+</svg>

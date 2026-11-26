@@ -1,0 +1,3263 @@
+{
+ "protocol": "Phonlet Wake on Picovoice's public wake-word benchmark, the way Hark reports it.",
+ "sensitivities": [
+  0.0,
+  0.02,
+  0.04,
+  0.06,
+  0.08,
+  0.1,
+  0.12,
+  0.14,
+  0.16,
+  0.18,
+  0.2,
+  0.22,
+  0.24,
+  0.26,
+  0.28,
+  0.3,
+  0.32,
+  0.34,
+  0.36,
+  0.38,
+  0.4,
+  0.42,
+  0.44,
+  0.46,
+  0.48,
+  0.5,
+  0.52,
+  0.54,
+  0.56,
+  0.58,
+  0.6,
+  0.62,
+  0.64,
+  0.66,
+  0.68,
+  0.7,
+  0.72,
+  0.74,
+  0.76,
+  0.78,
+  0.8,
+  0.82,
+  0.84,
+  0.86,
+  0.88,
+  0.9,
+  0.92,
+  0.94,
+  0.96,
+  0.98,
+  1.0
+ ],
+ "fa_per_hour": 0.1,
+ "results": [
+  {
+   "word": "alexa",
+   "snr": 10.0,
+   "hours": 24.69432628472222,
+   "keywords": 315,
+   "background_files": 2604,
+   "source": "lexicon",
+   "build_s": 1656,
+   "engine_s": 1177,
+   "rows": [
+    {
+     "sensitivity": 0.0,
+     "hits": 279,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.02,
+     "hits": 281,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.04,
+     "hits": 285,
+     "false_alarms": 3
+    },
+    {
+     "sensitivity": 0.06,
+     "hits": 285,
+     "false_alarms": 4
+    },
+    {
+     "sensitivity": 0.08,
+     "hits": 286,
+     "false_alarms": 4
+    },
+    {
+     "sensitivity": 0.1,
+     "hits": 287,
+     "false_alarms": 4
+    },
+    {
+     "sensitivity": 0.12,
+     "hits": 289,
+     "false_alarms": 4
+    },
+    {
+     "sensitivity": 0.14,
+     "hits": 291,
+     "false_alarms": 4
+    },
+    {
+     "sensitivity": 0.16,
+     "hits": 293,
+     "false_alarms": 4
+    },
+    {
+     "sensitivity": 0.18,
+     "hits": 295,
+     "false_alarms": 5
+    },
+    {
+     "sensitivity": 0.2,
+     "hits": 296,
+     "false_alarms": 5
+    },
+    {
+     "sensitivity": 0.22,
+     "hits": 299,
+     "false_alarms": 5
+    },
+    {
+     "sensitivity": 0.24,
+     "hits": 299,
+     "false_alarms": 5
+    },
+    {
+     "sensitivity": 0.26,
+     "hits": 300,
+     "false_alarms": 5
+    },
+    {
+     "sensitivity": 0.28,
+     "hits": 302,
+     "false_alarms": 6
+    },
+    {
+     "sensitivity": 0.3,
+     "hits": 303,
+     "false_alarms": 8
+    },
+    {
+     "sensitivity": 0.32,
+     "hits": 303,
+     "false_alarms": 10
+    },
+    {
+     "sensitivity": 0.34,
+     "hits": 303,
+     "false_alarms": 12
+    },
+    {
+     "sensitivity": 0.36,
+     "hits": 305,
+     "false_alarms": 13
+    },
+    {
+     "sensitivity": 0.38,
+     "hits": 306,
+     "false_alarms": 14
+    },
+    {
+     "sensitivity": 0.4,
+     "hits": 306,
+     "false_alarms": 16
+    },
+    {
+     "sensitivity": 0.42,
+     "hits": 307,
+     "false_alarms": 18
+    },
+    {
+     "sensitivity": 0.44,
+     "hits": 307,
+     "false_alarms": 21
+    },
+    {
+     "sensitivity": 0.46,
+     "hits": 307,
+     "false_alarms": 24
+    },
+    {
+     "sensitivity": 0.48,
+     "hits": 307,
+     "false_alarms": 24
+    },
+    {
+     "sensitivity": 0.5,
+     "hits": 307,
+     "false_alarms": 27
+    },
+    {
+     "sensitivity": 0.52,
+     "hits": 308,
+     "false_alarms": 31
+    },
+    {
+     "sensitivity": 0.54,
+     "hits": 308,
+     "false_alarms": 33
+    },
+    {
+     "sensitivity": 0.56,
+     "hits": 308,
+     "false_alarms": 33
+    },
+    {
+     "sensitivity": 0.58,
+     "hits": 308,
+     "false_alarms": 35
+    },
+    {
+     "sensitivity": 0.6,
+     "hits": 308,
+     "false_alarms": 37
+    },
+    {
+     "sensitivity": 0.62,
+     "hits": 308,
+     "false_alarms": 38
+    },
+    {
+     "sensitivity": 0.64,
+     "hits": 308,
+     "false_alarms": 41
+    },
+    {
+     "sensitivity": 0.66,
+     "hits": 308,
+     "false_alarms": 41
+    },
+    {
+     "sensitivity": 0.68,
+     "hits": 308,
+     "false_alarms": 47
+    },
+    {
+     "sensitivity": 0.7,
+     "hits": 308,
+     "false_alarms": 55
+    },
+    {
+     "sensitivity": 0.72,
+     "hits": 308,
+     "false_alarms": 58
+    },
+    {
+     "sensitivity": 0.74,
+     "hits": 308,
+     "false_alarms": 62
+    },
+    {
+     "sensitivity": 0.76,
+     "hits": 308,
+     "false_alarms": 67
+    },
+    {
+     "sensitivity": 0.78,
+     "hits": 308,
+     "false_alarms": 72
+    },
+    {
+     "sensitivity": 0.8,
+     "hits": 308,
+     "false_alarms": 76
+    },
+    {
+     "sensitivity": 0.82,
+     "hits": 308,
+     "false_alarms": 81
+    },
+    {
+     "sensitivity": 0.84,
+     "hits": 308,
+     "false_alarms": 86
+    },
+    {
+     "sensitivity": 0.86,
+     "hits": 308,
+     "false_alarms": 90
+    },
+    {
+     "sensitivity": 0.88,
+     "hits": 309,
+     "false_alarms": 94
+    },
+    {
+     "sensitivity": 0.9,
+     "hits": 309,
+     "false_alarms": 100
+    },
+    {
+     "sensitivity": 0.92,
+     "hits": 309,
+     "false_alarms": 106
+    },
+    {
+     "sensitivity": 0.94,
+     "hits": 309,
+     "false_alarms": 107
+    },
+    {
+     "sensitivity": 0.96,
+     "hits": 310,
+     "false_alarms": 119
+    },
+    {
+     "sensitivity": 0.98,
+     "hits": 310,
+     "false_alarms": 129
+    },
+    {
+     "sensitivity": 1.0,
+     "hits": 310,
+     "false_alarms": 137
+    }
+   ]
+  },
+  {
+   "word": "computer",
+   "snr": 10.0,
+   "hours": 24.932302309027776,
+   "keywords": 411,
+   "background_files": 2620,
+   "source": "lexicon",
+   "build_s": 1693,
+   "engine_s": 1214,
+   "rows": [
+    {
+     "sensitivity": 0.0,
+     "hits": 348,
+     "false_alarms": 1
+    },
+    {
+     "sensitivity": 0.02,
+     "hits": 351,
+     "false_alarms": 1
+    },
+    {
+     "sensitivity": 0.04,
+     "hits": 355,
+     "false_alarms": 1
+    },
+    {
+     "sensitivity": 0.06,
+     "hits": 356,
+     "false_alarms": 1
+    },
+    {
+     "sensitivity": 0.08,
+     "hits": 358,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.1,
+     "hits": 360,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.12,
+     "hits": 363,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.14,
+     "hits": 366,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.16,
+     "hits": 366,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.18,
+     "hits": 369,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.2,
+     "hits": 370,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.22,
+     "hits": 370,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.24,
+     "hits": 371,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.26,
+     "hits": 373,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.28,
+     "hits": 374,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.3,
+     "hits": 375,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.32,
+     "hits": 379,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.34,
+     "hits": 380,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.36,
+     "hits": 380,
+     "false_alarms": 3
+    },
+    {
+     "sensitivity": 0.38,
+     "hits": 380,
+     "false_alarms": 3
+    },
+    {
+     "sensitivity": 0.4,
+     "hits": 381,
+     "false_alarms": 3
+    },
+    {
+     "sensitivity": 0.42,
+     "hits": 382,
+     "false_alarms": 3
+    },
+    {
+     "sensitivity": 0.44,
+     "hits": 382,
+     "false_alarms": 3
+    },
+    {
+     "sensitivity": 0.46,
+     "hits": 382,
+     "false_alarms": 3
+    },
+    {
+     "sensitivity": 0.48,
+     "hits": 383,
+     "false_alarms": 3
+    },
+    {
+     "sensitivity": 0.5,
+     "hits": 385,
+     "false_alarms": 3
+    },
+    {
+     "sensitivity": 0.52,
+     "hits": 386,
+     "false_alarms": 3
+    },
+    {
+     "sensitivity": 0.54,
+     "hits": 386,
+     "false_alarms": 3
+    },
+    {
+     "sensitivity": 0.56,
+     "hits": 387,
+     "false_alarms": 3
+    },
+    {
+     "sensitivity": 0.58,
+     "hits": 388,
+     "false_alarms": 3
+    },
+    {
+     "sensitivity": 0.6,
+     "hits": 389,
+     "false_alarms": 3
+    },
+    {
+     "sensitivity": 0.62,
+     "hits": 389,
+     "false_alarms": 3
+    },
+    {
+     "sensitivity": 0.64,
+     "hits": 390,
+     "false_alarms": 4
+    },
+    {
+     "sensitivity": 0.66,
+     "hits": 390,
+     "false_alarms": 4
+    },
+    {
+     "sensitivity": 0.68,
+     "hits": 393,
+     "false_alarms": 4
+    },
+    {
+     "sensitivity": 0.7,
+     "hits": 393,
+     "false_alarms": 4
+    },
+    {
+     "sensitivity": 0.72,
+     "hits": 393,
+     "false_alarms": 4
+    },
+    {
+     "sensitivity": 0.74,
+     "hits": 393,
+     "false_alarms": 4
+    },
+    {
+     "sensitivity": 0.76,
+     "hits": 393,
+     "false_alarms": 5
+    },
+    {
+     "sensitivity": 0.78,
+     "hits": 394,
+     "false_alarms": 5
+    },
+    {
+     "sensitivity": 0.8,
+     "hits": 394,
+     "false_alarms": 6
+    },
+    {
+     "sensitivity": 0.82,
+     "hits": 395,
+     "false_alarms": 8
+    },
+    {
+     "sensitivity": 0.84,
+     "hits": 396,
+     "false_alarms": 9
+    },
+    {
+     "sensitivity": 0.86,
+     "hits": 396,
+     "false_alarms": 11
+    },
+    {
+     "sensitivity": 0.88,
+     "hits": 396,
+     "false_alarms": 13
+    },
+    {
+     "sensitivity": 0.9,
+     "hits": 396,
+     "false_alarms": 17
+    },
+    {
+     "sensitivity": 0.92,
+     "hits": 397,
+     "false_alarms": 23
+    },
+    {
+     "sensitivity": 0.94,
+     "hits": 397,
+     "false_alarms": 29
+    },
+    {
+     "sensitivity": 0.96,
+     "hits": 398,
+     "false_alarms": 36
+    },
+    {
+     "sensitivity": 0.98,
+     "hits": 400,
+     "false_alarms": 44
+    },
+    {
+     "sensitivity": 1.0,
+     "hits": 401,
+     "false_alarms": 51
+    }
+   ]
+  },
+  {
+   "word": "jarvis",
+   "snr": 10.0,
+   "hours": 24.92253703125,
+   "keywords": 384,
+   "background_files": 2620,
+   "source": "lexicon",
+   "build_s": 1970,
+   "engine_s": 1446,
+   "rows": [
+    {
+     "sensitivity": 0.0,
+     "hits": 338,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.02,
+     "hits": 340,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.04,
+     "hits": 341,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.06,
+     "hits": 341,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.08,
+     "hits": 344,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.1,
+     "hits": 346,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.12,
+     "hits": 346,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.14,
+     "hits": 346,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.16,
+     "hits": 347,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.18,
+     "hits": 348,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.2,
+     "hits": 349,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.22,
+     "hits": 353,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.24,
+     "hits": 355,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.26,
+     "hits": 357,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.28,
+     "hits": 357,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.3,
+     "hits": 357,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.32,
+     "hits": 358,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.34,
+     "hits": 360,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.36,
+     "hits": 361,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.38,
+     "hits": 364,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.4,
+     "hits": 364,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.42,
+     "hits": 364,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.44,
+     "hits": 364,
+     "false_alarms": 1
+    },
+    {
+     "sensitivity": 0.46,
+     "hits": 366,
+     "false_alarms": 1
+    },
+    {
+     "sensitivity": 0.48,
+     "hits": 366,
+     "false_alarms": 1
+    },
+    {
+     "sensitivity": 0.5,
+     "hits": 366,
+     "false_alarms": 1
+    },
+    {
+     "sensitivity": 0.52,
+     "hits": 366,
+     "false_alarms": 1
+    },
+    {
+     "sensitivity": 0.54,
+     "hits": 367,
+     "false_alarms": 3
+    },
+    {
+     "sensitivity": 0.56,
+     "hits": 368,
+     "false_alarms": 3
+    },
+    {
+     "sensitivity": 0.58,
+     "hits": 368,
+     "false_alarms": 4
+    },
+    {
+     "sensitivity": 0.6,
+     "hits": 369,
+     "false_alarms": 4
+    },
+    {
+     "sensitivity": 0.62,
+     "hits": 369,
+     "false_alarms": 6
+    },
+    {
+     "sensitivity": 0.64,
+     "hits": 369,
+     "false_alarms": 7
+    },
+    {
+     "sensitivity": 0.66,
+     "hits": 369,
+     "false_alarms": 7
+    },
+    {
+     "sensitivity": 0.68,
+     "hits": 370,
+     "false_alarms": 7
+    },
+    {
+     "sensitivity": 0.7,
+     "hits": 370,
+     "false_alarms": 8
+    },
+    {
+     "sensitivity": 0.72,
+     "hits": 371,
+     "false_alarms": 10
+    },
+    {
+     "sensitivity": 0.74,
+     "hits": 372,
+     "false_alarms": 14
+    },
+    {
+     "sensitivity": 0.76,
+     "hits": 372,
+     "false_alarms": 20
+    },
+    {
+     "sensitivity": 0.78,
+     "hits": 372,
+     "false_alarms": 26
+    },
+    {
+     "sensitivity": 0.8,
+     "hits": 372,
+     "false_alarms": 28
+    },
+    {
+     "sensitivity": 0.82,
+     "hits": 373,
+     "false_alarms": 31
+    },
+    {
+     "sensitivity": 0.84,
+     "hits": 373,
+     "false_alarms": 38
+    },
+    {
+     "sensitivity": 0.86,
+     "hits": 373,
+     "false_alarms": 43
+    },
+    {
+     "sensitivity": 0.88,
+     "hits": 374,
+     "false_alarms": 52
+    },
+    {
+     "sensitivity": 0.9,
+     "hits": 374,
+     "false_alarms": 68
+    },
+    {
+     "sensitivity": 0.92,
+     "hits": 375,
+     "false_alarms": 74
+    },
+    {
+     "sensitivity": 0.94,
+     "hits": 376,
+     "false_alarms": 79
+    },
+    {
+     "sensitivity": 0.96,
+     "hits": 376,
+     "false_alarms": 87
+    },
+    {
+     "sensitivity": 0.98,
+     "hits": 377,
+     "false_alarms": 100
+    },
+    {
+     "sensitivity": 1.0,
+     "hits": 377,
+     "false_alarms": 111
+    }
+   ]
+  },
+  {
+   "word": "smart mirror",
+   "snr": 10.0,
+   "hours": 24.826525086805557,
+   "keywords": 369,
+   "background_files": 2620,
+   "source": "lexicon",
+   "build_s": 1998,
+   "engine_s": 1422,
+   "rows": [
+    {
+     "sensitivity": 0.0,
+     "hits": 358,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.02,
+     "hits": 358,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.04,
+     "hits": 360,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.06,
+     "hits": 360,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.08,
+     "hits": 360,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.1,
+     "hits": 360,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.12,
+     "hits": 361,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.14,
+     "hits": 361,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.16,
+     "hits": 361,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.18,
+     "hits": 362,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.2,
+     "hits": 362,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.22,
+     "hits": 362,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.24,
+     "hits": 362,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.26,
+     "hits": 362,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.28,
+     "hits": 362,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.3,
+     "hits": 362,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.32,
+     "hits": 362,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.34,
+     "hits": 362,
+     "false_alarms": 1
+    },
+    {
+     "sensitivity": 0.36,
+     "hits": 362,
+     "false_alarms": 1
+    },
+    {
+     "sensitivity": 0.38,
+     "hits": 362,
+     "false_alarms": 1
+    },
+    {
+     "sensitivity": 0.4,
+     "hits": 362,
+     "false_alarms": 1
+    },
+    {
+     "sensitivity": 0.42,
+     "hits": 363,
+     "false_alarms": 1
+    },
+    {
+     "sensitivity": 0.44,
+     "hits": 363,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.46,
+     "hits": 363,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.48,
+     "hits": 363,
+     "false_alarms": 4
+    },
+    {
+     "sensitivity": 0.5,
+     "hits": 363,
+     "false_alarms": 6
+    },
+    {
+     "sensitivity": 0.52,
+     "hits": 363,
+     "false_alarms": 7
+    },
+    {
+     "sensitivity": 0.54,
+     "hits": 363,
+     "false_alarms": 7
+    },
+    {
+     "sensitivity": 0.56,
+     "hits": 363,
+     "false_alarms": 11
+    },
+    {
+     "sensitivity": 0.58,
+     "hits": 363,
+     "false_alarms": 12
+    },
+    {
+     "sensitivity": 0.6,
+     "hits": 363,
+     "false_alarms": 12
+    },
+    {
+     "sensitivity": 0.62,
+     "hits": 363,
+     "false_alarms": 15
+    },
+    {
+     "sensitivity": 0.64,
+     "hits": 363,
+     "false_alarms": 16
+    },
+    {
+     "sensitivity": 0.66,
+     "hits": 363,
+     "false_alarms": 19
+    },
+    {
+     "sensitivity": 0.68,
+     "hits": 363,
+     "false_alarms": 22
+    },
+    {
+     "sensitivity": 0.7,
+     "hits": 363,
+     "false_alarms": 22
+    },
+    {
+     "sensitivity": 0.72,
+     "hits": 363,
+     "false_alarms": 23
+    },
+    {
+     "sensitivity": 0.74,
+     "hits": 363,
+     "false_alarms": 29
+    },
+    {
+     "sensitivity": 0.76,
+     "hits": 363,
+     "false_alarms": 31
+    },
+    {
+     "sensitivity": 0.78,
+     "hits": 363,
+     "false_alarms": 42
+    },
+    {
+     "sensitivity": 0.8,
+     "hits": 363,
+     "false_alarms": 45
+    },
+    {
+     "sensitivity": 0.82,
+     "hits": 363,
+     "false_alarms": 54
+    },
+    {
+     "sensitivity": 0.84,
+     "hits": 363,
+     "false_alarms": 60
+    },
+    {
+     "sensitivity": 0.86,
+     "hits": 363,
+     "false_alarms": 73
+    },
+    {
+     "sensitivity": 0.88,
+     "hits": 363,
+     "false_alarms": 88
+    },
+    {
+     "sensitivity": 0.9,
+     "hits": 363,
+     "false_alarms": 102
+    },
+    {
+     "sensitivity": 0.92,
+     "hits": 365,
+     "false_alarms": 114
+    },
+    {
+     "sensitivity": 0.94,
+     "hits": 365,
+     "false_alarms": 139
+    },
+    {
+     "sensitivity": 0.96,
+     "hits": 365,
+     "false_alarms": 146
+    },
+    {
+     "sensitivity": 0.98,
+     "hits": 365,
+     "false_alarms": 155
+    },
+    {
+     "sensitivity": 1.0,
+     "hits": 365,
+     "false_alarms": 179
+    }
+   ]
+  },
+  {
+   "word": "snowboy",
+   "snr": 10.0,
+   "hours": 24.949389809027775,
+   "keywords": 401,
+   "background_files": 2620,
+   "source": "g2p",
+   "build_s": 1177,
+   "engine_s": 804,
+   "rows": [
+    {
+     "sensitivity": 0.0,
+     "hits": 374,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.02,
+     "hits": 374,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.04,
+     "hits": 375,
+     "false_alarms": 6
+    },
+    {
+     "sensitivity": 0.06,
+     "hits": 375,
+     "false_alarms": 8
+    },
+    {
+     "sensitivity": 0.08,
+     "hits": 375,
+     "false_alarms": 13
+    },
+    {
+     "sensitivity": 0.1,
+     "hits": 375,
+     "false_alarms": 13
+    },
+    {
+     "sensitivity": 0.12,
+     "hits": 376,
+     "false_alarms": 13
+    },
+    {
+     "sensitivity": 0.14,
+     "hits": 376,
+     "false_alarms": 13
+    },
+    {
+     "sensitivity": 0.16,
+     "hits": 376,
+     "false_alarms": 13
+    },
+    {
+     "sensitivity": 0.18,
+     "hits": 378,
+     "false_alarms": 13
+    },
+    {
+     "sensitivity": 0.2,
+     "hits": 379,
+     "false_alarms": 13
+    },
+    {
+     "sensitivity": 0.22,
+     "hits": 380,
+     "false_alarms": 13
+    },
+    {
+     "sensitivity": 0.24,
+     "hits": 380,
+     "false_alarms": 13
+    },
+    {
+     "sensitivity": 0.26,
+     "hits": 380,
+     "false_alarms": 13
+    },
+    {
+     "sensitivity": 0.28,
+     "hits": 380,
+     "false_alarms": 13
+    },
+    {
+     "sensitivity": 0.3,
+     "hits": 380,
+     "false_alarms": 13
+    },
+    {
+     "sensitivity": 0.32,
+     "hits": 382,
+     "false_alarms": 14
+    },
+    {
+     "sensitivity": 0.34,
+     "hits": 382,
+     "false_alarms": 15
+    },
+    {
+     "sensitivity": 0.36,
+     "hits": 383,
+     "false_alarms": 16
+    },
+    {
+     "sensitivity": 0.38,
+     "hits": 383,
+     "false_alarms": 16
+    },
+    {
+     "sensitivity": 0.4,
+     "hits": 383,
+     "false_alarms": 16
+    },
+    {
+     "sensitivity": 0.42,
+     "hits": 384,
+     "false_alarms": 17
+    },
+    {
+     "sensitivity": 0.44,
+     "hits": 384,
+     "false_alarms": 17
+    },
+    {
+     "sensitivity": 0.46,
+     "hits": 384,
+     "false_alarms": 20
+    },
+    {
+     "sensitivity": 0.48,
+     "hits": 384,
+     "false_alarms": 21
+    },
+    {
+     "sensitivity": 0.5,
+     "hits": 384,
+     "false_alarms": 23
+    },
+    {
+     "sensitivity": 0.52,
+     "hits": 384,
+     "false_alarms": 24
+    },
+    {
+     "sensitivity": 0.54,
+     "hits": 385,
+     "false_alarms": 26
+    },
+    {
+     "sensitivity": 0.56,
+     "hits": 385,
+     "false_alarms": 29
+    },
+    {
+     "sensitivity": 0.58,
+     "hits": 385,
+     "false_alarms": 29
+    },
+    {
+     "sensitivity": 0.6,
+     "hits": 386,
+     "false_alarms": 29
+    },
+    {
+     "sensitivity": 0.62,
+     "hits": 386,
+     "false_alarms": 29
+    },
+    {
+     "sensitivity": 0.64,
+     "hits": 386,
+     "false_alarms": 29
+    },
+    {
+     "sensitivity": 0.66,
+     "hits": 386,
+     "false_alarms": 29
+    },
+    {
+     "sensitivity": 0.68,
+     "hits": 387,
+     "false_alarms": 33
+    },
+    {
+     "sensitivity": 0.7,
+     "hits": 387,
+     "false_alarms": 36
+    },
+    {
+     "sensitivity": 0.72,
+     "hits": 387,
+     "false_alarms": 36
+    },
+    {
+     "sensitivity": 0.74,
+     "hits": 387,
+     "false_alarms": 36
+    },
+    {
+     "sensitivity": 0.76,
+     "hits": 387,
+     "false_alarms": 38
+    },
+    {
+     "sensitivity": 0.78,
+     "hits": 387,
+     "false_alarms": 38
+    },
+    {
+     "sensitivity": 0.8,
+     "hits": 387,
+     "false_alarms": 40
+    },
+    {
+     "sensitivity": 0.82,
+     "hits": 388,
+     "false_alarms": 42
+    },
+    {
+     "sensitivity": 0.84,
+     "hits": 388,
+     "false_alarms": 44
+    },
+    {
+     "sensitivity": 0.86,
+     "hits": 388,
+     "false_alarms": 44
+    },
+    {
+     "sensitivity": 0.88,
+     "hits": 389,
+     "false_alarms": 48
+    },
+    {
+     "sensitivity": 0.9,
+     "hits": 389,
+     "false_alarms": 48
+    },
+    {
+     "sensitivity": 0.92,
+     "hits": 389,
+     "false_alarms": 50
+    },
+    {
+     "sensitivity": 0.94,
+     "hits": 389,
+     "false_alarms": 51
+    },
+    {
+     "sensitivity": 0.96,
+     "hits": 389,
+     "false_alarms": 55
+    },
+    {
+     "sensitivity": 0.98,
+     "hits": 390,
+     "false_alarms": 56
+    },
+    {
+     "sensitivity": 1.0,
+     "hits": 390,
+     "false_alarms": 58
+    }
+   ]
+  },
+  {
+   "word": "view glass",
+   "snr": 10.0,
+   "hours": 24.94161342013889,
+   "keywords": 399,
+   "background_files": 2620,
+   "source": "lexicon",
+   "build_s": 1131,
+   "engine_s": 803,
+   "rows": [
+    {
+     "sensitivity": 0.0,
+     "hits": 360,
+     "false_alarms": 11
+    },
+    {
+     "sensitivity": 0.02,
+     "hits": 361,
+     "false_alarms": 11
+    },
+    {
+     "sensitivity": 0.04,
+     "hits": 361,
+     "false_alarms": 11
+    },
+    {
+     "sensitivity": 0.06,
+     "hits": 362,
+     "false_alarms": 11
+    },
+    {
+     "sensitivity": 0.08,
+     "hits": 362,
+     "false_alarms": 12
+    },
+    {
+     "sensitivity": 0.1,
+     "hits": 363,
+     "false_alarms": 12
+    },
+    {
+     "sensitivity": 0.12,
+     "hits": 365,
+     "false_alarms": 12
+    },
+    {
+     "sensitivity": 0.14,
+     "hits": 367,
+     "false_alarms": 13
+    },
+    {
+     "sensitivity": 0.16,
+     "hits": 367,
+     "false_alarms": 13
+    },
+    {
+     "sensitivity": 0.18,
+     "hits": 368,
+     "false_alarms": 13
+    },
+    {
+     "sensitivity": 0.2,
+     "hits": 368,
+     "false_alarms": 13
+    },
+    {
+     "sensitivity": 0.22,
+     "hits": 371,
+     "false_alarms": 13
+    },
+    {
+     "sensitivity": 0.24,
+     "hits": 371,
+     "false_alarms": 13
+    },
+    {
+     "sensitivity": 0.26,
+     "hits": 371,
+     "false_alarms": 13
+    },
+    {
+     "sensitivity": 0.28,
+     "hits": 371,
+     "false_alarms": 13
+    },
+    {
+     "sensitivity": 0.3,
+     "hits": 371,
+     "false_alarms": 13
+    },
+    {
+     "sensitivity": 0.32,
+     "hits": 371,
+     "false_alarms": 14
+    },
+    {
+     "sensitivity": 0.34,
+     "hits": 372,
+     "false_alarms": 14
+    },
+    {
+     "sensitivity": 0.36,
+     "hits": 373,
+     "false_alarms": 14
+    },
+    {
+     "sensitivity": 0.38,
+     "hits": 373,
+     "false_alarms": 14
+    },
+    {
+     "sensitivity": 0.4,
+     "hits": 373,
+     "false_alarms": 15
+    },
+    {
+     "sensitivity": 0.42,
+     "hits": 373,
+     "false_alarms": 15
+    },
+    {
+     "sensitivity": 0.44,
+     "hits": 374,
+     "false_alarms": 16
+    },
+    {
+     "sensitivity": 0.46,
+     "hits": 374,
+     "false_alarms": 16
+    },
+    {
+     "sensitivity": 0.48,
+     "hits": 374,
+     "false_alarms": 16
+    },
+    {
+     "sensitivity": 0.5,
+     "hits": 374,
+     "false_alarms": 16
+    },
+    {
+     "sensitivity": 0.52,
+     "hits": 374,
+     "false_alarms": 16
+    },
+    {
+     "sensitivity": 0.54,
+     "hits": 374,
+     "false_alarms": 16
+    },
+    {
+     "sensitivity": 0.56,
+     "hits": 374,
+     "false_alarms": 16
+    },
+    {
+     "sensitivity": 0.58,
+     "hits": 374,
+     "false_alarms": 16
+    },
+    {
+     "sensitivity": 0.6,
+     "hits": 374,
+     "false_alarms": 17
+    },
+    {
+     "sensitivity": 0.62,
+     "hits": 374,
+     "false_alarms": 18
+    },
+    {
+     "sensitivity": 0.64,
+     "hits": 375,
+     "false_alarms": 19
+    },
+    {
+     "sensitivity": 0.66,
+     "hits": 376,
+     "false_alarms": 23
+    },
+    {
+     "sensitivity": 0.68,
+     "hits": 378,
+     "false_alarms": 23
+    },
+    {
+     "sensitivity": 0.7,
+     "hits": 378,
+     "false_alarms": 23
+    },
+    {
+     "sensitivity": 0.72,
+     "hits": 379,
+     "false_alarms": 23
+    },
+    {
+     "sensitivity": 0.74,
+     "hits": 380,
+     "false_alarms": 23
+    },
+    {
+     "sensitivity": 0.76,
+     "hits": 381,
+     "false_alarms": 23
+    },
+    {
+     "sensitivity": 0.78,
+     "hits": 382,
+     "false_alarms": 24
+    },
+    {
+     "sensitivity": 0.8,
+     "hits": 382,
+     "false_alarms": 25
+    },
+    {
+     "sensitivity": 0.82,
+     "hits": 382,
+     "false_alarms": 26
+    },
+    {
+     "sensitivity": 0.84,
+     "hits": 382,
+     "false_alarms": 29
+    },
+    {
+     "sensitivity": 0.86,
+     "hits": 383,
+     "false_alarms": 31
+    },
+    {
+     "sensitivity": 0.88,
+     "hits": 384,
+     "false_alarms": 35
+    },
+    {
+     "sensitivity": 0.9,
+     "hits": 384,
+     "false_alarms": 35
+    },
+    {
+     "sensitivity": 0.92,
+     "hits": 384,
+     "false_alarms": 36
+    },
+    {
+     "sensitivity": 0.94,
+     "hits": 384,
+     "false_alarms": 38
+    },
+    {
+     "sensitivity": 0.96,
+     "hits": 384,
+     "false_alarms": 39
+    },
+    {
+     "sensitivity": 0.98,
+     "hits": 385,
+     "false_alarms": 41
+    },
+    {
+     "sensitivity": 1.0,
+     "hits": 387,
+     "false_alarms": 46
+    }
+   ]
+  },
+  {
+   "word": "alexa",
+   "snr": 99.0,
+   "hours": 24.69432628472222,
+   "keywords": 315,
+   "background_files": 2604,
+   "source": "lexicon",
+   "build_s": 1306,
+   "engine_s": 747,
+   "rows": [
+    {
+     "sensitivity": 0.0,
+     "hits": 300,
+     "false_alarms": 1
+    },
+    {
+     "sensitivity": 0.02,
+     "hits": 300,
+     "false_alarms": 1
+    },
+    {
+     "sensitivity": 0.04,
+     "hits": 301,
+     "false_alarms": 1
+    },
+    {
+     "sensitivity": 0.06,
+     "hits": 302,
+     "false_alarms": 1
+    },
+    {
+     "sensitivity": 0.08,
+     "hits": 303,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.1,
+     "hits": 304,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.12,
+     "hits": 304,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.14,
+     "hits": 304,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.16,
+     "hits": 308,
+     "false_alarms": 3
+    },
+    {
+     "sensitivity": 0.18,
+     "hits": 308,
+     "false_alarms": 3
+    },
+    {
+     "sensitivity": 0.2,
+     "hits": 308,
+     "false_alarms": 3
+    },
+    {
+     "sensitivity": 0.22,
+     "hits": 308,
+     "false_alarms": 3
+    },
+    {
+     "sensitivity": 0.24,
+     "hits": 310,
+     "false_alarms": 3
+    },
+    {
+     "sensitivity": 0.26,
+     "hits": 310,
+     "false_alarms": 3
+    },
+    {
+     "sensitivity": 0.28,
+     "hits": 310,
+     "false_alarms": 5
+    },
+    {
+     "sensitivity": 0.3,
+     "hits": 310,
+     "false_alarms": 6
+    },
+    {
+     "sensitivity": 0.32,
+     "hits": 310,
+     "false_alarms": 7
+    },
+    {
+     "sensitivity": 0.34,
+     "hits": 310,
+     "false_alarms": 7
+    },
+    {
+     "sensitivity": 0.36,
+     "hits": 311,
+     "false_alarms": 7
+    },
+    {
+     "sensitivity": 0.38,
+     "hits": 311,
+     "false_alarms": 7
+    },
+    {
+     "sensitivity": 0.4,
+     "hits": 312,
+     "false_alarms": 7
+    },
+    {
+     "sensitivity": 0.42,
+     "hits": 312,
+     "false_alarms": 7
+    },
+    {
+     "sensitivity": 0.44,
+     "hits": 313,
+     "false_alarms": 7
+    },
+    {
+     "sensitivity": 0.46,
+     "hits": 313,
+     "false_alarms": 7
+    },
+    {
+     "sensitivity": 0.48,
+     "hits": 313,
+     "false_alarms": 7
+    },
+    {
+     "sensitivity": 0.5,
+     "hits": 313,
+     "false_alarms": 7
+    },
+    {
+     "sensitivity": 0.52,
+     "hits": 313,
+     "false_alarms": 10
+    },
+    {
+     "sensitivity": 0.54,
+     "hits": 313,
+     "false_alarms": 11
+    },
+    {
+     "sensitivity": 0.56,
+     "hits": 313,
+     "false_alarms": 12
+    },
+    {
+     "sensitivity": 0.58,
+     "hits": 313,
+     "false_alarms": 12
+    },
+    {
+     "sensitivity": 0.6,
+     "hits": 313,
+     "false_alarms": 12
+    },
+    {
+     "sensitivity": 0.62,
+     "hits": 313,
+     "false_alarms": 12
+    },
+    {
+     "sensitivity": 0.64,
+     "hits": 313,
+     "false_alarms": 12
+    },
+    {
+     "sensitivity": 0.66,
+     "hits": 313,
+     "false_alarms": 14
+    },
+    {
+     "sensitivity": 0.68,
+     "hits": 313,
+     "false_alarms": 14
+    },
+    {
+     "sensitivity": 0.7,
+     "hits": 313,
+     "false_alarms": 16
+    },
+    {
+     "sensitivity": 0.72,
+     "hits": 313,
+     "false_alarms": 18
+    },
+    {
+     "sensitivity": 0.74,
+     "hits": 313,
+     "false_alarms": 19
+    },
+    {
+     "sensitivity": 0.76,
+     "hits": 313,
+     "false_alarms": 19
+    },
+    {
+     "sensitivity": 0.78,
+     "hits": 313,
+     "false_alarms": 19
+    },
+    {
+     "sensitivity": 0.8,
+     "hits": 313,
+     "false_alarms": 21
+    },
+    {
+     "sensitivity": 0.82,
+     "hits": 313,
+     "false_alarms": 22
+    },
+    {
+     "sensitivity": 0.84,
+     "hits": 313,
+     "false_alarms": 25
+    },
+    {
+     "sensitivity": 0.86,
+     "hits": 313,
+     "false_alarms": 29
+    },
+    {
+     "sensitivity": 0.88,
+     "hits": 313,
+     "false_alarms": 29
+    },
+    {
+     "sensitivity": 0.9,
+     "hits": 313,
+     "false_alarms": 29
+    },
+    {
+     "sensitivity": 0.92,
+     "hits": 313,
+     "false_alarms": 30
+    },
+    {
+     "sensitivity": 0.94,
+     "hits": 313,
+     "false_alarms": 30
+    },
+    {
+     "sensitivity": 0.96,
+     "hits": 313,
+     "false_alarms": 30
+    },
+    {
+     "sensitivity": 0.98,
+     "hits": 313,
+     "false_alarms": 30
+    },
+    {
+     "sensitivity": 1.0,
+     "hits": 314,
+     "false_alarms": 33
+    }
+   ]
+  },
+  {
+   "word": "computer",
+   "snr": 99.0,
+   "hours": 24.932302309027776,
+   "keywords": 411,
+   "background_files": 2620,
+   "source": "lexicon",
+   "build_s": 1305,
+   "engine_s": 800,
+   "rows": [
+    {
+     "sensitivity": 0.0,
+     "hits": 401,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.02,
+     "hits": 401,
+     "false_alarms": 1
+    },
+    {
+     "sensitivity": 0.04,
+     "hits": 401,
+     "false_alarms": 1
+    },
+    {
+     "sensitivity": 0.06,
+     "hits": 401,
+     "false_alarms": 1
+    },
+    {
+     "sensitivity": 0.08,
+     "hits": 402,
+     "false_alarms": 1
+    },
+    {
+     "sensitivity": 0.1,
+     "hits": 404,
+     "false_alarms": 1
+    },
+    {
+     "sensitivity": 0.12,
+     "hits": 405,
+     "false_alarms": 1
+    },
+    {
+     "sensitivity": 0.14,
+     "hits": 405,
+     "false_alarms": 1
+    },
+    {
+     "sensitivity": 0.16,
+     "hits": 405,
+     "false_alarms": 1
+    },
+    {
+     "sensitivity": 0.18,
+     "hits": 405,
+     "false_alarms": 1
+    },
+    {
+     "sensitivity": 0.2,
+     "hits": 406,
+     "false_alarms": 1
+    },
+    {
+     "sensitivity": 0.22,
+     "hits": 408,
+     "false_alarms": 1
+    },
+    {
+     "sensitivity": 0.24,
+     "hits": 409,
+     "false_alarms": 1
+    },
+    {
+     "sensitivity": 0.26,
+     "hits": 410,
+     "false_alarms": 1
+    },
+    {
+     "sensitivity": 0.28,
+     "hits": 410,
+     "false_alarms": 1
+    },
+    {
+     "sensitivity": 0.3,
+     "hits": 410,
+     "false_alarms": 1
+    },
+    {
+     "sensitivity": 0.32,
+     "hits": 410,
+     "false_alarms": 1
+    },
+    {
+     "sensitivity": 0.34,
+     "hits": 410,
+     "false_alarms": 1
+    },
+    {
+     "sensitivity": 0.36,
+     "hits": 410,
+     "false_alarms": 1
+    },
+    {
+     "sensitivity": 0.38,
+     "hits": 410,
+     "false_alarms": 1
+    },
+    {
+     "sensitivity": 0.4,
+     "hits": 410,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.42,
+     "hits": 410,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.44,
+     "hits": 410,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.46,
+     "hits": 410,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.48,
+     "hits": 410,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.5,
+     "hits": 410,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.52,
+     "hits": 410,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.54,
+     "hits": 410,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.56,
+     "hits": 410,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.58,
+     "hits": 410,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.6,
+     "hits": 410,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.62,
+     "hits": 410,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.64,
+     "hits": 410,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.66,
+     "hits": 410,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.68,
+     "hits": 410,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.7,
+     "hits": 410,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.72,
+     "hits": 410,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.74,
+     "hits": 410,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.76,
+     "hits": 410,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.78,
+     "hits": 410,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.8,
+     "hits": 410,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.82,
+     "hits": 410,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.84,
+     "hits": 410,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.86,
+     "hits": 410,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.88,
+     "hits": 410,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.9,
+     "hits": 410,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.92,
+     "hits": 410,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.94,
+     "hits": 410,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.96,
+     "hits": 410,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.98,
+     "hits": 410,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 1.0,
+     "hits": 410,
+     "false_alarms": 2
+    }
+   ]
+  },
+  {
+   "word": "jarvis",
+   "snr": 99.0,
+   "hours": 24.92253703125,
+   "keywords": 384,
+   "background_files": 2620,
+   "source": "lexicon",
+   "build_s": 546,
+   "engine_s": 768,
+   "rows": [
+    {
+     "sensitivity": 0.0,
+     "hits": 354,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.02,
+     "hits": 356,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.04,
+     "hits": 356,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.06,
+     "hits": 358,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.08,
+     "hits": 358,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.1,
+     "hits": 359,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.12,
+     "hits": 359,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.14,
+     "hits": 359,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.16,
+     "hits": 360,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.18,
+     "hits": 360,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.2,
+     "hits": 360,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.22,
+     "hits": 360,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.24,
+     "hits": 360,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.26,
+     "hits": 361,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.28,
+     "hits": 361,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.3,
+     "hits": 361,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.32,
+     "hits": 361,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.34,
+     "hits": 361,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.36,
+     "hits": 361,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.38,
+     "hits": 361,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.4,
+     "hits": 363,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.42,
+     "hits": 363,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.44,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.46,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.48,
+     "hits": 368,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.5,
+     "hits": 368,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.52,
+     "hits": 369,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.54,
+     "hits": 370,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.56,
+     "hits": 371,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.58,
+     "hits": 372,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.6,
+     "hits": 373,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.62,
+     "hits": 373,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.64,
+     "hits": 373,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.66,
+     "hits": 373,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.68,
+     "hits": 373,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.7,
+     "hits": 373,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.72,
+     "hits": 375,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.74,
+     "hits": 375,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.76,
+     "hits": 375,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.78,
+     "hits": 376,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.8,
+     "hits": 377,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.82,
+     "hits": 378,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.84,
+     "hits": 379,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.86,
+     "hits": 380,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.88,
+     "hits": 380,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.9,
+     "hits": 380,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.92,
+     "hits": 380,
+     "false_alarms": 3
+    },
+    {
+     "sensitivity": 0.94,
+     "hits": 380,
+     "false_alarms": 4
+    },
+    {
+     "sensitivity": 0.96,
+     "hits": 380,
+     "false_alarms": 4
+    },
+    {
+     "sensitivity": 0.98,
+     "hits": 380,
+     "false_alarms": 4
+    },
+    {
+     "sensitivity": 1.0,
+     "hits": 380,
+     "false_alarms": 4
+    }
+   ]
+  },
+  {
+   "word": "smart mirror",
+   "snr": 99.0,
+   "hours": 24.826525086805557,
+   "keywords": 369,
+   "background_files": 2620,
+   "source": "lexicon",
+   "build_s": 537,
+   "engine_s": 761,
+   "rows": [
+    {
+     "sensitivity": 0.0,
+     "hits": 365,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.02,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.04,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.06,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.08,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.1,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.12,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.14,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.16,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.18,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.2,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.22,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.24,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.26,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.28,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.3,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.32,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.34,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.36,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.38,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.4,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.42,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.44,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.46,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.48,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.5,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.52,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.54,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.56,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.58,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.6,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.62,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.64,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.66,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.68,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.7,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.72,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.74,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.76,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.78,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.8,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.82,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.84,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.86,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.88,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.9,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.92,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.94,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.96,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.98,
+     "hits": 366,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 1.0,
+     "hits": 366,
+     "false_alarms": 0
+    }
+   ]
+  },
+  {
+   "word": "snowboy",
+   "snr": 99.0,
+   "hours": 24.949389809027775,
+   "keywords": 401,
+   "background_files": 2620,
+   "source": "g2p",
+   "build_s": 387,
+   "engine_s": 664,
+   "rows": [
+    {
+     "sensitivity": 0.0,
+     "hits": 386,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.02,
+     "hits": 387,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.04,
+     "hits": 387,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.06,
+     "hits": 388,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.08,
+     "hits": 388,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.1,
+     "hits": 388,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.12,
+     "hits": 388,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.14,
+     "hits": 388,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.16,
+     "hits": 388,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.18,
+     "hits": 388,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.2,
+     "hits": 388,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.22,
+     "hits": 389,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.24,
+     "hits": 389,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.26,
+     "hits": 390,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.28,
+     "hits": 390,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.3,
+     "hits": 390,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.32,
+     "hits": 391,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.34,
+     "hits": 391,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.36,
+     "hits": 391,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.38,
+     "hits": 392,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.4,
+     "hits": 392,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.42,
+     "hits": 392,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.44,
+     "hits": 392,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.46,
+     "hits": 392,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.48,
+     "hits": 392,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.5,
+     "hits": 392,
+     "false_alarms": 1
+    },
+    {
+     "sensitivity": 0.52,
+     "hits": 392,
+     "false_alarms": 1
+    },
+    {
+     "sensitivity": 0.54,
+     "hits": 392,
+     "false_alarms": 1
+    },
+    {
+     "sensitivity": 0.56,
+     "hits": 392,
+     "false_alarms": 1
+    },
+    {
+     "sensitivity": 0.58,
+     "hits": 392,
+     "false_alarms": 1
+    },
+    {
+     "sensitivity": 0.6,
+     "hits": 392,
+     "false_alarms": 2
+    },
+    {
+     "sensitivity": 0.62,
+     "hits": 393,
+     "false_alarms": 3
+    },
+    {
+     "sensitivity": 0.64,
+     "hits": 393,
+     "false_alarms": 3
+    },
+    {
+     "sensitivity": 0.66,
+     "hits": 393,
+     "false_alarms": 3
+    },
+    {
+     "sensitivity": 0.68,
+     "hits": 393,
+     "false_alarms": 3
+    },
+    {
+     "sensitivity": 0.7,
+     "hits": 393,
+     "false_alarms": 3
+    },
+    {
+     "sensitivity": 0.72,
+     "hits": 394,
+     "false_alarms": 3
+    },
+    {
+     "sensitivity": 0.74,
+     "hits": 394,
+     "false_alarms": 3
+    },
+    {
+     "sensitivity": 0.76,
+     "hits": 394,
+     "false_alarms": 4
+    },
+    {
+     "sensitivity": 0.78,
+     "hits": 394,
+     "false_alarms": 4
+    },
+    {
+     "sensitivity": 0.8,
+     "hits": 394,
+     "false_alarms": 4
+    },
+    {
+     "sensitivity": 0.82,
+     "hits": 394,
+     "false_alarms": 4
+    },
+    {
+     "sensitivity": 0.84,
+     "hits": 394,
+     "false_alarms": 4
+    },
+    {
+     "sensitivity": 0.86,
+     "hits": 395,
+     "false_alarms": 4
+    },
+    {
+     "sensitivity": 0.88,
+     "hits": 395,
+     "false_alarms": 4
+    },
+    {
+     "sensitivity": 0.9,
+     "hits": 397,
+     "false_alarms": 4
+    },
+    {
+     "sensitivity": 0.92,
+     "hits": 397,
+     "false_alarms": 4
+    },
+    {
+     "sensitivity": 0.94,
+     "hits": 397,
+     "false_alarms": 4
+    },
+    {
+     "sensitivity": 0.96,
+     "hits": 397,
+     "false_alarms": 4
+    },
+    {
+     "sensitivity": 0.98,
+     "hits": 397,
+     "false_alarms": 4
+    },
+    {
+     "sensitivity": 1.0,
+     "hits": 397,
+     "false_alarms": 4
+    }
+   ]
+  },
+  {
+   "word": "view glass",
+   "snr": 99.0,
+   "hours": 24.94161342013889,
+   "keywords": 399,
+   "background_files": 2620,
+   "source": "lexicon",
+   "build_s": 526,
+   "engine_s": 602,
+   "rows": [
+    {
+     "sensitivity": 0.0,
+     "hits": 388,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.02,
+     "hits": 388,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.04,
+     "hits": 389,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.06,
+     "hits": 389,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.08,
+     "hits": 389,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.1,
+     "hits": 390,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.12,
+     "hits": 391,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.14,
+     "hits": 391,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.16,
+     "hits": 391,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.18,
+     "hits": 391,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.2,
+     "hits": 391,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.22,
+     "hits": 391,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.24,
+     "hits": 391,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.26,
+     "hits": 391,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.28,
+     "hits": 391,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.3,
+     "hits": 392,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.32,
+     "hits": 393,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.34,
+     "hits": 393,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.36,
+     "hits": 393,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.38,
+     "hits": 393,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.4,
+     "hits": 393,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.42,
+     "hits": 393,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.44,
+     "hits": 393,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.46,
+     "hits": 393,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.48,
+     "hits": 393,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.5,
+     "hits": 394,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.52,
+     "hits": 394,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.54,
+     "hits": 394,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.56,
+     "hits": 394,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.58,
+     "hits": 395,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.6,
+     "hits": 396,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.62,
+     "hits": 396,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.64,
+     "hits": 396,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.66,
+     "hits": 396,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.68,
+     "hits": 396,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.7,
+     "hits": 396,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.72,
+     "hits": 396,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.74,
+     "hits": 396,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.76,
+     "hits": 396,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.78,
+     "hits": 396,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.8,
+     "hits": 396,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.82,
+     "hits": 396,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.84,
+     "hits": 396,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.86,
+     "hits": 396,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.88,
+     "hits": 396,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.9,
+     "hits": 396,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.92,
+     "hits": 396,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.94,
+     "hits": 396,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.96,
+     "hits": 396,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 0.98,
+     "hits": 396,
+     "false_alarms": 0
+    },
+    {
+     "sensitivity": 1.0,
+     "hits": 396,
+     "false_alarms": 1
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,306 @@
+{
+ "10.0": {
+  "words": {
+   "alexa": {
+    "keywords": 315,
+    "hours": 24.69432628472222,
+    "source": "lexicon",
+    "best": {
+     "sensitivity": 0.3,
+     "hit": 94.92063492063492,
+     "false_alarms": 2,
+     "range": "shipped"
+    },
+    "best_shipped": {
+     "sensitivity": 0.3,
+     "hit": 94.92063492063492,
+     "false_alarms": 2,
+     "range": "shipped"
+    },
+    "calibrated": {
+     "hit": 84.12698412698413,
+     "false_alarms": 1,
+     "fa_per_hour": 0.040495131896701134
+    }
+   },
+   "computer": {
+    "keywords": 411,
+    "hours": 24.932302309027776,
+    "source": "lexicon",
+    "best": {
+     "sensitivity": 0.84,
+     "hit": 96.10705596107056,
+     "false_alarms": 2,
+     "range": "shipped"
+    },
+    "best_shipped": {
+     "sensitivity": 0.84,
+     "hit": 96.10705596107056,
+     "false_alarms": 2,
+     "range": "shipped"
+    },
+    "calibrated": {
+     "hit": 83.69829683698296,
+     "false_alarms": 0,
+     "fa_per_hour": 0.0
+    }
+   },
+   "jarvis": {
+    "keywords": 384,
+    "hours": 24.92253703125,
+    "source": "lexicon",
+    "best": {
+     "sensitivity": 0.68,
+     "hit": 96.35416666666667,
+     "false_alarms": 2,
+     "range": "shipped"
+    },
+    "best_shipped": {
+     "sensitivity": 0.68,
+     "hit": 96.35416666666667,
+     "false_alarms": 2,
+     "range": "shipped"
+    },
+    "calibrated": {
+     "hit": 88.02083333333333,
+     "false_alarms": 0,
+     "fa_per_hour": 0.0
+    }
+   },
+   "smart mirror": {
+    "keywords": 369,
+    "hours": 24.826525086805557,
+    "source": "lexicon",
+    "best": {
+     "sensitivity": 0.5,
+     "hit": 98.3739837398374,
+     "false_alarms": 2,
+     "range": "shipped"
+    },
+    "best_shipped": {
+     "sensitivity": 0.5,
+     "hit": 98.3739837398374,
+     "false_alarms": 2,
+     "range": "shipped"
+    },
+    "calibrated": {
+     "hit": 96.4769647696477,
+     "false_alarms": 0,
+     "fa_per_hour": 0.0
+    }
+   },
+   "snowboy": {
+    "keywords": 401,
+    "hours": 24.949389809027775,
+    "source": "g2p",
+    "best": {
+     "sensitivity": 0.12,
+     "hit": 93.01745635910224,
+     "false_alarms": 0,
+     "range": "shipped"
+    },
+    "best_shipped": {
+     "sensitivity": 0.12,
+     "hit": 93.01745635910224,
+     "false_alarms": 0,
+     "range": "shipped"
+    },
+    "calibrated": {
+     "hit": 92.26932668329177,
+     "false_alarms": 0,
+     "fa_per_hour": 0.0
+    }
+   },
+   "view glass": {
+    "keywords": 399,
+    "hours": 24.94161342013889,
+    "source": "lexicon",
+    "best": {
+     "sensitivity": 0.06,
+     "hit": 90.47619047619048,
+     "false_alarms": 2,
+     "range": "shipped"
+    },
+    "best_shipped": {
+     "sensitivity": 0.06,
+     "hit": 90.47619047619048,
+     "false_alarms": 2,
+     "range": "shipped"
+    },
+    "calibrated": {
+     "hit": 89.97493734335839,
+     "false_alarms": 2,
+     "fa_per_hour": 0.08018727442808962
+    }
+   }
+  },
+  "best_mean": 94.87491468725038,
+  "best_shipped_mean": 94.87491468725038,
+  "single": {
+   "sensitivity": 0.08,
+   "mean": 90.38324555044177,
+   "words": {
+    "alexa": 86.34920634920636,
+    "computer": 86.37469586374696,
+    "jarvis": 89.58333333333333,
+    "smart mirror": 96.7479674796748,
+    "snowboy": 92.76807980049875,
+    "view glass": 90.47619047619048
+   }
+  },
+  "calibrated_mean": 89.09455718226639,
+  "calibrated_fa_per_hour": 0.02009825447856677
+ },
+ "99.0": {
+  "words": {
+   "alexa": {
+    "keywords": 315,
+    "hours": 24.69432628472222,
+    "source": "lexicon",
+    "best": {
+     "sensitivity": 0.44,
+     "hit": 99.36507936507937,
+     "false_alarms": 0,
+     "range": "shipped"
+    },
+    "best_shipped": {
+     "sensitivity": 0.44,
+     "hit": 99.36507936507937,
+     "false_alarms": 0,
+     "range": "shipped"
+    },
+    "calibrated": {
+     "hit": 93.96825396825396,
+     "false_alarms": 0,
+     "fa_per_hour": 0.0
+    }
+   },
+   "computer": {
+    "keywords": 411,
+    "hours": 24.932302309027776,
+    "source": "lexicon",
+    "best": {
+     "sensitivity": 0.26,
+     "hit": 99.7566909975669,
+     "false_alarms": 0,
+     "range": "shipped"
+    },
+    "best_shipped": {
+     "sensitivity": 0.26,
+     "hit": 99.7566909975669,
+     "false_alarms": 0,
+     "range": "shipped"
+    },
+    "calibrated": {
+     "hit": 97.5669099756691,
+     "false_alarms": 0,
+     "fa_per_hour": 0.0
+    }
+   },
+   "jarvis": {
+    "keywords": 384,
+    "hours": 24.92253703125,
+    "source": "lexicon",
+    "best": {
+     "sensitivity": 0.86,
+     "hit": 98.95833333333333,
+     "false_alarms": 0,
+     "range": "shipped"
+    },
+    "best_shipped": {
+     "sensitivity": 0.86,
+     "hit": 98.95833333333333,
+     "false_alarms": 0,
+     "range": "shipped"
+    },
+    "calibrated": {
+     "hit": 92.1875,
+     "false_alarms": 0,
+     "fa_per_hour": 0.0
+    }
+   },
+   "smart mirror": {
+    "keywords": 369,
+    "hours": 24.826525086805557,
+    "source": "lexicon",
+    "best": {
+     "sensitivity": 0.02,
+     "hit": 99.1869918699187,
+     "false_alarms": 0,
+     "range": "shipped"
+    },
+    "best_shipped": {
+     "sensitivity": 0.02,
+     "hit": 99.1869918699187,
+     "false_alarms": 0,
+     "range": "shipped"
+    },
+    "calibrated": {
+     "hit": 98.9159891598916,
+     "false_alarms": 0,
+     "fa_per_hour": 0.0
+    }
+   },
+   "snowboy": {
+    "keywords": 401,
+    "hours": 24.949389809027775,
+    "source": "g2p",
+    "best": {
+     "sensitivity": 0.9,
+     "hit": 98.50374064837905,
+     "false_alarms": 0,
+     "range": "shipped"
+    },
+    "best_shipped": {
+     "sensitivity": 0.9,
+     "hit": 98.50374064837905,
+     "false_alarms": 0,
+     "range": "shipped"
+    },
+    "calibrated": {
+     "hit": 96.00997506234414,
+     "false_alarms": 0,
+     "fa_per_hour": 0.0
+    }
+   },
+   "view glass": {
+    "keywords": 399,
+    "hours": 24.94161342013889,
+    "source": "lexicon",
+    "best": {
+     "sensitivity": 0.6,
+     "hit": 99.24812030075188,
+     "false_alarms": 0,
+     "range": "shipped"
+    },
+    "best_shipped": {
+     "sensitivity": 0.6,
+     "hit": 99.24812030075188,
+     "false_alarms": 0,
+     "range": "shipped"
+    },
+    "calibrated": {
+     "hit": 96.99248120300751,
+     "false_alarms": 0,
+     "fa_per_hour": 0.0
+    }
+   }
+  },
+  "best_mean": 99.16982608583821,
+  "best_shipped_mean": 99.16982608583821,
+  "single": {
+   "sensitivity": 0.84,
+   "mean": 98.96017226899143,
+   "words": {
+    "alexa": 99.36507936507937,
+    "computer": 99.7566909975669,
+    "jarvis": 98.69791666666667,
+    "smart mirror": 99.1869918699187,
+    "snowboy": 97.50623441396509,
+    "view glass": 99.24812030075188
+   }
+  },
+  "calibrated_mean": 95.94018489486105,
+  "calibrated_fa_per_hour": 0.0
+ }
+}

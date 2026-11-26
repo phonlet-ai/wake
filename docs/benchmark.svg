@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 810 440" width="810" height="440" role="img" aria-labelledby="t d">
 <title id="t">Hit rate at no more than 0.1 false alarms per hour, 10 dB noise</title>
-<desc id="d">Picovoice Porcupine v4 97.3%; Phonlet Wake 0.1.0 92.2%; Hark v0.3 78.1%; Kitt.ai Snowboy 68.1%; sherpa-onnx KWS 3.3M 66.0%; CMU PocketSphinx 5.1.1 48.0%; Vosk 0.3.45 32.7%</desc>
+<desc id="d">Picovoice Porcupine v4 97.3%; Phonlet Wake 0.1.0 94.9%; Hark v0.3 78.1%; Kitt.ai Snowboy 68.1%; sherpa-onnx KWS 3.3M 66.0%; CMU PocketSphinx 5.1.1 48.0%; Vosk 0.3.45 32.7%</desc>
 <style>text{font:13px system-ui,-apple-system,Segoe UI,sans-serif;fill:#3d3f37}.k{font-size:11px;fill:#6b6d63}.h{font-size:15px;font-weight:600;fill:#1d1f19}.v{font-weight:600}.grid{stroke:#d9d6cc;stroke-width:1}.bar{fill:#a7a69c}.ours{fill:#c94322}@media (prefers-color-scheme:dark){text{fill:#d6d2c6}.k{fill:#a6a294}.h{fill:#f3efe6}.grid{stroke:#3a3b33}.bar{fill:#6f6e66}.ours{fill:#ec6a44}}</style>
 <text class="h" x="0" y="20">Picovoice wake-word benchmark: hit rate at ≤ 0.1 false alarms/hour</text>
 <text class="k" x="0" y="40">Mean of six words, 10 dB noise. Higher is better.</text>
@@ -20,8 +20,8 @@
 <text class="v" x="736.1" y="80">97.3%</text>
 <text x="288" y="122" text-anchor="end" class="v">Phonlet Wake 0.1.0</text>
 <text class="k" x="288" y="136" text-anchor="end">typed, no training</text>
-<rect class="ours" x="300" y="112" width="405.6" height="22" rx="4"/>
-<text class="v" x="713.6" y="128">92.2%</text>
+<rect class="ours" x="300" y="112" width="417.4" height="22" rx="4"/>
+<text class="v" x="725.4" y="128">94.9%</text>
 <text x="288" y="170" text-anchor="end">Hark v0.3</text>
 <text class="k" x="288" y="184" text-anchor="end">typed, no training</text>
 <rect class="bar" x="300" y="160" width="343.8" height="22" rx="4"/>

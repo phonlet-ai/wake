@@ -28,7 +28,7 @@
 ## Phonlet Wake in the test
 
 - Each word is a keyword file written by the threshold generator from text alone (`wake-threshold
-  0.2.0`, the release binary). No recording of any keyword was used, and nothing was tuned on the
+  0.2.0 --endpoint`, the release binary). No recording of any keyword was used, and nothing was tuned on the
   test except the sensitivity.
 - Detection is the Phonlet Wake engine through its C API (`libkws_engine`). One pass scores 51
   sensitivities from 0 to 1 (`kws_session_create` with production arbitration); `wwb.py --check`
@@ -37,10 +37,6 @@
   other engines; the best within the shipped sensitivity range; one sensitivity for all six words;
   and sensitivity 0, the calibrated setting that aims at 0.1 false alarms per hour of speech, with no
   tuning at all.
-- The shipped range stops at sensitivity 0. Where a word cannot meet the cap there, the sweep is
-  extended with the generator's documented stricter target (`--rate-strict 0.001`, so that its
-  sensitivity 1 equals the default file's sensitivity 0) and the same stream is scored again
-  (`report.py --extra`). Values from that range are marked.
 
 ## What the model had seen
 
@@ -70,17 +66,12 @@ CORPORA/demand-16k/<ENVIRONMENT>/ch01.wav
 ```
 
 ```sh
-wake-threshold alexa computer jarvis "smart mirror" snowboy "view glass" --out research/data/wwb/keywords.json
+wake-threshold alexa computer jarvis "smart mirror" snowboy "view glass" --endpoint --out research/data/wwb/keywords.json
 python research/benchmark/wwb.py --corpora CORPORA --keywords research/data/wwb/keywords.json \
   --lib build/native/libkws_engine.so --model resources/models/en-1/model.pwake \
   --out research/runs/wwb/run.json --check          # the grid equals the public API
 python research/benchmark/wwb.py ... --out research/runs/wwb/run.json --workers 4   # about 10 min per stream
-# a word that cannot meet the cap at sensitivity 0: extend its sweep with a stricter target
-wake-threshold "view glass" --rate-loose 0.1 --rate-strict 0.001 --out research/data/wwb/view-glass-strict.json
-python research/benchmark/wwb.py ... --keywords research/data/wwb/view-glass-strict.json \
-  --words "view glass" --snrs 10 --out research/runs/wwb/run-strict.json
-python research/benchmark/report.py research/runs/wwb/run.json --extra research/runs/wwb/run-strict.json \
-  --markdown out.md --svg chart.svg --json summary.json
+python research/benchmark/report.py research/runs/wwb/run.json --markdown out.md --svg chart.svg --json summary.json
 ```
 
 Needs NumPy and soundfile. Each stream is about 5.7 GB of float32 while it is scored; it is deleted

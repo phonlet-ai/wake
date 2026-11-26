@@ -122,8 +122,8 @@ credits and licence texts are in `THIRD_PARTY_NOTICES.md`.
 ## Benchmark
 
 On the public six-word wake-word benchmark (alexa, computer, jarvis, smart mirror, snowboy, view
-glass), with phrases typed as text: **92.2%** hit rate at 0.1 false alarms per hour in 10 dB noise,
-and **98.6%** without noise. The comparison with other engines, per-word results and the method:
+glass), with phrases typed as text: **94.9%** hit rate at 0.1 false alarms per hour in 10 dB noise,
+and **99.2%** without noise. The comparison with other engines, per-word results and the method:
 [benchmark](https://github.com/phonlet-ai/wake/blob/main/docs/benchmark.md).
 
 ## Limitations

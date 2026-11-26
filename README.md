@@ -38,12 +38,12 @@ phrases typed as text: hit rate at 0.1 false alarms per hour, 10 dB noise, mean 
 | Engine | How a wake word is made | Hit rate, 10 dB |
 | --- | --- | ---: |
 | Picovoice Porcupine v4 | a model per word (closed) | 97.3% |
-| **Phonlet Wake 0.1.0** | typed, no training | **92.2%** |
+| **Phonlet Wake 0.1.0** | typed, no training | **94.9%** |
 | Hark v0.3 | typed, no training | 78.1% |
 | Kitt.ai Snowboy | recorded templates | 68.1% |
 | sherpa-onnx KWS 3.3M | typed, no training | 66.0% |
 
-Without noise Phonlet Wake reaches 98.6%. Per-word results, sources and the method:
+Without noise Phonlet Wake reaches 99.2%. Per-word results, sources and the method:
 [benchmark](docs/benchmark.md).
 
 ## Get started

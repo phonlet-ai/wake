@@ -14,7 +14,7 @@ Wake measured here; other engines as published (sources below).
 | Engine | How a wake word is made | Hit rate, 10 dB |
 | --- | --- | ---: |
 | Picovoice Porcupine v4 | a model per word (closed) | 97.3% |
-| **Phonlet Wake 0.1.0** | typed, no training | **92.2%** |
+| **Phonlet Wake 0.1.0** | typed, no training | **94.9%** |
 | Hark v0.3 | typed, no training | 78.1% |
 | Kitt.ai Snowboy | recorded templates | 68.1% |
 | sherpa-onnx KWS 3.3M | typed, no training | 66.0% |
@@ -23,15 +23,13 @@ Wake measured here; other engines as published (sources below).
 
 | Word | Phonlet Wake, 10 dB | Phonlet Wake, clean | sherpa-onnx, 10 dB | Hark v0.3, 10 dB | openWakeWord, 10 dB | microWakeWord, 10 dB |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| alexa | 89.2% | 96.5% | 82.9% | 78.4% | 87.9% | 89.5% |
-| computer | 92.5% | 99.8% | 63.3% | 64.2% | 0.0% | n/a |
-| jarvis | 95.3% | 99.0% | 57.6% | 78.4% | 63.3% | n/a |
+| alexa | 94.9% | 99.4% | 82.9% | 78.4% | 87.9% | 89.5% |
+| computer | 96.1% | 99.8% | 63.3% | 64.2% | 0.0% | n/a |
+| jarvis | 96.4% | 99.0% | 57.6% | 78.4% | 63.3% | n/a |
 | smart mirror | 98.4% | 99.2% | 66.1% | 85.1% | n/a | n/a |
-| snowboy | 93.3% | 97.8% | 69.3% | 83.5% | n/a | n/a |
-| view glass | 84.5% * | 99.2% | 57.1% | 79.2% | n/a | n/a |
-| **mean** | **92.2%** | **98.6%** | 66.0% | 78.1% | partial | partial |
-
-\* With a stricter calibration target (`wake-threshold --rate-strict`). Within the default sensitivity range the 10 dB mean is 78.1%.
+| snowboy | 93.0% | 98.5% | 69.3% | 83.5% | n/a | n/a |
+| view glass | 90.5% | 99.2% | 57.1% | 79.2% | n/a | n/a |
+| **mean** | **94.9%** | **99.2%** | 66.0% | 78.1% | partial | partial |
 
 ## Notes
 
@@ -42,13 +40,12 @@ Wake measured here; other engines as published (sources below).
 ## Versions
 
 - Model `resources/models/en-1/model.pwake`, SHA-256 `8be3687d060f953d0069480cf53d1fd0aa66e04551c2a4b600823a992a864af8`
-- Keyword files from `wake-threshold 0.2.0` (the v0.1.0 release binary), default options; "view glass"
-  also with `--rate-loose 0.1 --rate-strict 0.001`
+- Keyword files from `wake-threshold 0.2.0 --endpoint` (the v0.1.0 release binary)
 - Engine `libkws_engine` 0.1.0 built from this repository; detection through its C API, proven
   identical to `phonlet_wake_process` (`wwb.py --check`)
 - Data: Picovoice/wake-word-benchmark at `84919190`, LibriSpeech test-clean (OpenSLR), DEMAND 16 kHz
   (17 environments)
-- Results: [`research/benchmark/results/`](../research/benchmark/results/)
+- Results: [`research/benchmark/results/2026-11-27-endpoint.json`](../research/benchmark/results/2026-11-27-endpoint.json)
 - Other engines, as published: Porcupine, Snowboy and PocketSphinx by
   [Picovoice](https://github.com/Picovoice/wake-word-benchmark); Hark, sherpa-onnx, Vosk,
   openWakeWord and microWakeWord in

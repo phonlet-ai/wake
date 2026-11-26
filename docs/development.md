@@ -2,7 +2,7 @@
 
 [Documentation](README.md) / Development
 
-Engine source, SDK code, tests, the model and brand assets all live in this repository; builds never import another repository. [AGENTS.md](../AGENTS.md) lists the rules and [PLAN.md](../PLAN.md) the open work.
+Engine source, SDK code, tests, the model and brand assets all live in this repository; builds never import another repository. [AGENTS.md](../AGENTS.md) lists the rules.
 
 ## Toolchain
 

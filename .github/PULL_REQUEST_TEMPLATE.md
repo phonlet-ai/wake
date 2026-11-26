@@ -7,7 +7,6 @@ What changed and why.
 - [ ] `python scripts/test.py` passes locally (or `--quick` with justification)
 - [ ] `scripts/check-repository.py` passes (links, hashes, banned words)
 - [ ] Engine, frontend and model changes leave the golden tests unchanged
-- [ ] PLAN.md updated with the date and what verified it
 
 ## Evidence
 

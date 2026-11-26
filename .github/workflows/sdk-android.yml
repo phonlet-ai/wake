@@ -1,5 +1,5 @@
 name: Android SDK build
-# Manual dispatch only during the publishing program (see PLAN.md). Runners
+# Manual dispatch only during the publishing program. Runners
 # carry the Android SDK; NDK/CMake are installed on demand.
 on:
   workflow_dispatch:

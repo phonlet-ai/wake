@@ -1,5 +1,5 @@
 name: Node SDK matrix
-# Manual dispatch only during the publishing program (see PLAN.md).
+# Manual dispatch only during the publishing program.
 on:
   workflow_dispatch:
 permissions:

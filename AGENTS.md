@@ -1,6 +1,7 @@
 # AGENTS.md — Phonlet Wake
 
-Read this, then [PLAN.md](PLAN.md) (decisions and open work), before changing anything. Using
+Read this before changing anything. The maintainers keep decisions and open work in a local
+`PLAN.md` that is not part of the repository. Using
 Phonlet Wake in your own project rather than changing it? Read
 [phonletai.com/agents.md](https://phonletai.com/agents.md) instead.
 
@@ -50,7 +51,7 @@ It holds no training code or training data.
 - **Releases are deliberate.** Push, tag and publish only when the maintainers ask. CI workflows
   run on manual dispatch only; the local suite is the merge gate.
 - **Claims match evidence.** A platform is "tested" only after its SDK has run real audio on that
-  platform; update the README's platform table and PLAN.md with what was run.
+  platform; update the README's platform table with what was run.
 
 ## Verify a change
 
@@ -77,6 +78,5 @@ ESP32 SDK, an Android phone for Android, Windows with .NET 8 for .NET.
 
 ## Commits
 
-Small and focused; the message says what changed and what verified it. Mark finished PLAN.md
-items with the date and the verification. Never commit build output (`build/`, `dist/`,
+Small and focused; the message says what changed and what verified it. Never commit build output (`build/`, `dist/`,
 `sdkconfig`, `managed_components/`) or copied demo assets (gitignored).

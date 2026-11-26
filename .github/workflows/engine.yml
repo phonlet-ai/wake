@@ -1,5 +1,5 @@
 name: Engine cross-platform build
-# Manual dispatch only during the publishing program (see PLAN.md): local
+# Manual dispatch only during the publishing program: local
 # verification is the gate; matrix runs are launched on demand.
 on:
   workflow_dispatch:

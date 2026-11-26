@@ -1,5 +1,5 @@
 name: ESP32-S3 cross-compile
-# Manual dispatch only during the publishing program (see PLAN.md). Container
+# Manual dispatch only during the publishing program. Container
 # build only — on-device evidence is recorded separately with real hardware.
 on:
   workflow_dispatch:

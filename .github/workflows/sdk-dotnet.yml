@@ -1,5 +1,5 @@
 name: .NET SDK build
-# Manual dispatch only during the publishing program (see PLAN.md). Requires a
+# Manual dispatch only during the publishing program. Requires a
 # runner with the .NET SDK (windows-2022 and ubuntu-22.04+ images include it).
 on:
   workflow_dispatch:
